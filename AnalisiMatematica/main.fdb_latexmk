@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1695818520 "main.tex" "main.pdf" "main" 1695818521 0
+["pdflatex"] 1695819536 "main.tex" "main.pdf" "main" 1695819538 0
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1689853683 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1689853683 928 2dc8d444221b7a635bb58038579b861a ""
@@ -20,6 +20,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1689853683 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1689853683 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1689853683 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1689853683 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1689853683 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1689853683 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1689853683 40635 c40361e206be584d448876bba8a64a3b ""
@@ -241,9 +242,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1695725436 6768050 9cc7b73b9928319cbbb01caac17f0eec ""
   "letterfonts.tex" 1695759210 8525 ed11538e9090b6e453d1dae9d562bb31 ""
   "macros.tex" 1695759216 3390 dd31ac40797350e5c771ba0ff8ef9b4c ""
-  "main.aux" 1695818521 5481 feae5d7d65f45b654ddd720bacce3c25 "pdflatex"
-  "main.tex" 1695818515 1074 445df270c294699bcc14d8583cc4dba6 ""
-  "main.toc" 1695818521 496 4810d88aa54cf2634c2a91fc898568fc "pdflatex"
+  "main.aux" 1695819538 14983 adff08cd84f74b67a22e4d25ec603142 "pdflatex"
+  "main.tex" 1695819537 1889 2e31a3c2a87cce09e1db5fdc7e32636a ""
+  "main.toc" 1695819538 2070 f7f227fd270635a217d9079810a7ffcd "pdflatex"
   "preamble.tex" 1695759231 20054 e8b060e1824fe8c121b4605787aceebc ""
   (generated)
   "main.aux"
