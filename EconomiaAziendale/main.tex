@@ -1,0 +1,166 @@
+
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Economia Aziendale}\\Sistemi Informativi Aziendali}
+\author{\huge{Caberlotto Giovanni}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Società di Capitali}
+\dfn{Società di Capitali}{Le società di capitali si dividono in: \begin{itemize}
+    \item Società per azioni s.p.a.
+    \item Società in accomandita per azioni s.a.p.a.
+    \item Società a responsabilità limitata s.r.l.
+    \item Società a responsabilità limitata semplificata s.r.l.s.
+\end{itemize} Si tratta di organizzazioni di persone e mezzi per l’esercizio in comune di un’attività produttiva, dotate di piena autonomia patrimoniale: quindi, soltanto la società con il suo patrimonio risponde delle obbligazioni sociali. Il socio, pertanto, ha una responsabilità limitata al capitale conferito, non assumendo alcuna responsabilità personale, neanche sussidiaria, per le obbligazioni sociali (tranne i casi previsti dalla legge)}
+
+\section{Costituzione}
+
+    
+
+\qs{Costituzione S.r.l.}{In data 1/4 viene fondata la società Alfa S.r.l., capitale sociale 2.000.000, composto da 1.000.000€ in denaro e 1.000.000€ da un macchinario, il cui valore è confermato dalla relazione giurata. Il denaro viene conferito tramite assegni, versati il giorno stesso dagli amministratori sul c/c bancario. In data 1/7 gli amministratori richiamano il restante 75\% in denaro tramite lettera raccomandata, che viene versato il 15/7}
+
+\begin{table}[h]
+    \centering
+    \caption{Libro Giornale}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Data & Descrizione & Dare & Avere \\
+    \hline
+    1/04 & Soci c/sottoscrizione & 2.000.000,00 & \\
+         & Capitale sociale & & 2.000.000,00 \\
+    \hline
+    1/04 & Impianti e macchinari & 1.000.000,00 & \\
+         & Assegni & 250.000,00 & \\
+         & Soci c/sottoscrizione & & 1.250.000,00 \\
+    \hline
+    1/04 & Banca c/c & 250.000,00 & \\
+         & Assegni & & 250.000,00 \\
+    \hline
+    1/07 & Soci c/versamenti richiami & 750.000,00 & \\
+         & Azionisti c/sottoscrizione & & 750.000,00 \\
+    \hline
+    15/07 & Banca x c/c & 750.000,00 & \\
+          & Azionisti c/versamenti richiami & & 750.000,00 \\
+    \hline
+    \end{tabular}
+\end{table}
+
+    
+\qs{Costituzione S.p.a.}{In data 1/4 viene fondata la società Alfa S.p.A., capitale sociale 2.000.000 suddiviso in 100.000 azioni da 20€. Il 50\% è composto da conferimenti in denaro e l'altro 50\% da un macchinario, il cui valore di 1.000.000€ è confermato dalla relazione giurata. Il denaro viene inviato tramite assegni, versati il giorno stesso dagli amministratori sul c/c vincolato. In data 13/4 avviene la registrazione presso il registro delle imprese e vengono svincolati i fondi, fruttiferi al tasso del 1,5\%. In data 1/7 gli amministratori richiamano il restante 75\% in denaro tramite lettera raccomandata, che viene versato il 15/7}
+
+\begin{table}[h]
+    \centering
+    \caption{Libro Giornale}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Data & Descrizione & Dare & Avere \\
+    \hline
+    1/04 & Soci c/sottoscrizione & 2.000.000,00 & \\
+         & Capitale sociale & & 2.000.000,00 \\
+    \hline
+    1/04 & Impianti e macchinari & 1.000.000,00 & \\
+         & Assegni & 250.000,00 & \\
+         & Soci c/sottoscrizione & & 1.250.000,00 \\
+    \hline
+    1/04 & Banca c/c & 250.000,00 & \\
+         & Assegni & & 250.000,00 \\
+    \hline
+    1/07 & Soci c/versamenti richiami & 750.000,00 & \\
+         & Azionisti c/sottoscrizione & & 750.000,00 \\
+    \hline
+    15/07 & Banca x c/c & 750.000,00 & \\
+          & Azionisti c/versamenti richiami & & 750.000,00 \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\dfn{Definizione Parcella}{Nota delle competenze, delle spese fatte o di altri compensi spettanti di diritto, che viene presentata al cliente da un libero professionista}
+
+\qs{Parcella notaio}{
+Si riceve in data 16/4 la parcella del notaio per la redazione dell'atto costitutivo, che reca 4.000€ di onorario, 750€ di spese documentate, IVA 22\% e ritenuta fiscale 20\%. Il collegio sindacale approva la patrimonializzazione del costo. La parcella viene pagata il 18/4 tramite bonifico.
+}
+\begin{table}[h]
+    \centering
+    \caption{Libro Giornale}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Data & Descrizione & Dare & Avere \\
+    \hline
+    16/04 & Costi d'impianto & 4750,00 & \\
+         & Iva ns/credito & 880,00 &  \\
+         & Debiti vs/fornitori & & 5630,00 \\
+    \hline
+    16/04 & Debiti vs/fornitori & 5630,00 & \\
+         & Debiti per ritenuta da versare & 800,00 & \\
+         & Banca c/c & & 4830,00 \\
+    \hline
+    \end{tabular}
+\end{table}
+Quando si parla di parcelle bisogna distingure due casistiche: \begin{itemize}
+    \item Parcella del notaio;
+    \item Parcella del commercialista.
+\end{itemize}
+ nella seconda andrà aggiunta in fattura all'imponibile iva il costo "contributo cassa di prevvidenza" del 4\%
+\qs{Parcella Commercialista}{Il giorno 10/1 si riceve la parcella n. 9 del commercialista, con onorario di 3000€ + contributo di previdenza 4\% + IVA. Sono anche addebitate spese documentate per 400€. Viene pagata immediatamente }
+
+\begin{table}[h]
+    \centering
+    \caption{Registrazione Parcella Commercialista}
+    \begin{tabular}{|l|l|}
+        \hline
+         Onorario & 3.000,00  \\
+         Contributo cassa di prevvidenza (4\%)& 120 \\
+         Imponibile & 3.120,00 \\
+         Iva (22\%) & 686,40 \\
+         Spese documentate & 400 \\
+         \hline
+         Totale Parcella & 4.206,40 \\ 
+         \hline
+         Ritenuta (20\%) su onorario & 600,00 \\
+         \hline
+         Totale da pagare & 3.606,40 \\
+         \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[h]
+    \centering
+    \caption{Libro Giornale}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    Data & Descrizione & Dare & Avere \\
+    \hline
+    16/04 & Costi d'impianto & 3.520,00 & \\
+         & Iva ns/credito & 686,40 &  \\
+         & Debiti vs/fornitori & & 4.206,40 \\
+    \hline
+    16/04 & Debiti vs/fornitori & 4.206,40 & \\
+         & Debiti per ritenuta da versare &  & 600,00 \\
+         & Banca c/c & & 3606,40 \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\section{Riparto utili e copertura perdite}
+\qs{Riparto utili}{In data 12/4 viene approvato il progetto di riparto dell'utile dell'anno n - che ammonta a 146.000€ - e che prevede l'accantonamento a riserva legale e il 3\% a riserva statutaria. Sono inoltre presenti utili a novo per 14890€. Il capitale sociale è composto da 20.000 azioni dal valore di 30€, di cui 15.000 possedute da soggetti lordisti. Il pagamento viene eseguito il 28/4}
+
+
+%\section{Scritture di assestamento}
+
+%\chapter{Immobilizzazioni}
+
+
+\end{document}
