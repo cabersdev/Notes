@@ -1,0 +1,39 @@
+
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Algebra Lineare}\\Sistemi Informativi Aziendali}
+\author{\huge{Caberlotto Giovanni}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Vettori e Matrici} % (fold)
+\label{chap:Vettori e Matrici}
+
+\section{Concetto di vettore}
+\subsection{Punti di vista differenti}
+
+La pietra portante alla basa di tutta l'agebra lineare è il vettore, ci sono tre idee distinte ma correlate di cosa sia un vettore. dal punto di vista della fisica i vettori sono frecce nello spazio, e ciò che definisce un vettore è la lunghezza e la direzione in cui punta, ma fintanto che queste due quantità sono le stesse lo si può spostare e rimane lo stesso vettore. I vettori che si trovano nel piano sono bidimesionali, i vettori che invece si trovano nello spazio sono tridimensionali. Dal punto di vista informatico un vettore è una lista ordinata di elementi, per esempio mettiamo caso di star raccogliendo dati riguardo ai prezzi di alcune case, e le uniche quantità che ci interessano sono la metratura e il prezzo, possiamo moddelare quindi ogni singola casa con una coppia di numeri, il primo rappresenta la metratura e il secondo il prezzo l'ordine di questi due ha importanza per mettere a confronto ogni singola coppia, in gergo stiamo moddellando le case come vettori bidimensionali dove vettore non sta altro che a significare "lista", e ciò che lo rende bidimensionale è il fatto che la lunghezza di questa è 2. Dal punto di vista matematico invece si cerca di generalizzare entrambi i punti di vista appena elencati, affermando che un vettore può essere qualsiasi cosa per cui vi sia una sensata nozione di addizione o moltiplicazione per un numero i dettagli di questo punto di vista sono molto astratti
+
+\subsection{Vettori nel piano bidimensionali}
+Per comprendere i vettori nel piano, è essenziale avere familiarità con il concetto di sistema di riferimento cartesiano. In questo contesto, ogni punto del piano può essere associato univocamente a una coppia ordinata di numeri reali $(x, y)$, corrispondenti alle sue coordinate.
+
+Un vettore nel piano è rappresentato come un segmento orientato che collega l'origine $(0, 0)$ al punto considerato. Questo segmento può essere visualizzato come una freccia con direzione e lunghezza. Le componenti del vettore sono i numeri reali $(x, y)$ associati al punto finale del segmento.
+
+
+\subsection{Vettori nel piano tridimensionali}
+
+% chapter Vettori e Matrici (end)
+
+\end{document}
