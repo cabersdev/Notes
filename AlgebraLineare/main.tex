@@ -34,6 +34,37 @@ Un vettore nel piano è rappresentato come un segmento orientato che collega l'o
 
 \subsection{Vettori nel piano tridimensionali}
 
+\section{Matrici}
+Rappresentazione matrice generica ad m righe ed n colonne ad elementi in un campo$^1$ K (per es: $K = \mathbb{R}$), altrimenti detta matrice ($m * n$) ad elementi in K:
+
+$ A = \begin{pmatrix}
+  a_{11}\ a_{12} \ .. \ a_{1n}\\
+  a_{21}\ a_{22} \ .. \ a_{2n}\\
+  a_{31}\ a_{32} \ .. \ a_{3n}\\
+  . \ . \ . \ . \ . \ . \ .\ . \ \\
+  a_{m1}\ a_{m2} \ .. \ a_{mn} \\
+\end{pmatrix}$
+
+\begin{itemize}
+  \item $a_{ij} \in K$ è l'elemento generico di $A$ in cui $i$ è l'indice di riga e $j$ l'indice di colonna;
+  \item $M_{(m*n,K)}$ denota l'insieme di tutte le matrici ($m * n $) ad elementi in $K$;
+  \item ogni $A \in M(m * n, \mathbb{R})$ si dice matrice reale;
+  \item ogni $A \in M(m * n, \mathbb{C})$ si dice matrice complessa.
+\end{itemize}
+
+la matrice sopra rappresentata può essere rappresentata anche la seguente notazione:
+
+$A = (a_{ij}) \in M(m * n,K)$
+
+\dfn{Matrice nulla}{La matrice nulla $m * n$ è la matrice $O_{(m*n)} = (z_{ij}) \in M(m*n,K)$ definita ponendo $z_{ij} = 0$ per ogni $i = 1,2...,m, j=1,2,...,n$ }
+\ex{Rappresentazione matrice nulla}{
+
+  $ A = \begin{pmatrix}
+      0 \\
+  \end{pmatrix}$
+}
+
+
 % chapter Vettori e Matrici (end)
 
 \end{document}
