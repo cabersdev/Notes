@@ -27,109 +27,57 @@
 La pietra portante alla basa di tutta l'agebra lineare è il vettore, ci sono tre idee distinte ma correlate di cosa sia un vettore. dal punto di vista della fisica i vettori sono frecce nello spazio, e ciò che definisce un vettore è la lunghezza e la direzione in cui punta, ma fintanto che queste due quantità sono le stesse lo si può spostare e rimane lo stesso vettore. I vettori che si trovano nel piano sono bidimesionali, i vettori che invece si trovano nello spazio sono tridimensionali. Dal punto di vista informatico un vettore è una lista ordinata di elementi, per esempio mettiamo caso di star raccogliendo dati riguardo ai prezzi di alcune case, e le uniche quantità che ci interessano sono la metratura e il prezzo, possiamo moddelare quindi ogni singola casa con una coppia di numeri, il primo rappresenta la metratura e il secondo il prezzo l'ordine di questi due ha importanza per mettere a confronto ogni singola coppia, in gergo stiamo moddellando le case come vettori bidimensionali dove vettore non sta altro che a significare "lista", e ciò che lo rende bidimensionale è il fatto che la lunghezza di questa è 2. Dal punto di vista matematico invece si cerca di generalizzare entrambi i punti di vista appena elencati, affermando che un vettore può essere qualsiasi cosa per cui vi sia una sensata nozione di addizione o moltiplicazione per un numero i dettagli di questo punto di vista sono molto astratti
 
 \subsection{Vettori nel piano bidimensionali}
+
 Per comprendere i vettori nel piano, è essenziale avere familiarità con il concetto di sistema di riferimento cartesiano. In questo contesto, ogni punto del piano può essere associato univocamente a una coppia ordinata di numeri reali $(x, y)$, corrispondenti alle sue coordinate.
 
 Un vettore nel piano è rappresentato come un segmento orientato che collega l'origine $(0, 0)$ al punto considerato. Questo segmento può essere visualizzato come una freccia con direzione e lunghezza. Le componenti del vettore sono i numeri reali $(x, y)$ associati al punto finale del segmento.
 
+Se introduciamo un sistema di riferimento cartesiano il piano si può indentificare con l'insieme $\mathbb{R}^2$ delle coppie ordinate di numeri reali.
 
-\subsection{Vettori nel piano tridimensionali}
 
-\section{Matrici}
-Rappresentazione matrice generica ad m righe ed n colonne ad elementi in un campo$^1$ K (per es: $K = \mathbb{R}$), altrimenti detta matrice ($m * n$) ad elementi in K:
+Ad ogni punto è possibile associare un vettore che possiamo pensare come un segmento orientato avente per estremi l'origine e il punto stesso
 
-$ A = \begin{pmatrix}
-  a_{11}\ a_{12} \ .. \ a_{1n}\\
-  a_{21}\ a_{22} \ .. \ a_{2n}\\
-  a_{31}\ a_{32} \ .. \ a_{3n}\\
-  . \ . \ . \ . \ . \ . \ .\ . \ \\
-  a_{m1}\ a_{m2} \ .. \ a_{mn} \\
-\end{pmatrix}$
+Ne segue quindi che possiamo "indentificare" il vettore $\vec{op}$ con la coppia ordinata $(x,y)$ delle coordinate del punto $p$ e scrivere $\vec{v} = (x,y)$ invece di $\vec{v} = \vec{op}$ dove $(x,y)$ sono detti componenti scalari e $|\vec{v}|$ è definito norma o modulo
 
-\begin{itemize}
-  \item $a_{ij} \in K$ è l'elemento generico di $A$ in cui $i$ è l'indice di riga e $j$ l'indice di colonna;
-  \item $M_{(m*n,K)}$ denota l'insieme di tutte le matrici ($m * n $) ad elementi in $K$;
-  \item ogni $A \in M(m * n, \mathbb{R})$ si dice matrice reale;
-  \item ogni $A \in M(m * n, \mathbb{C})$ si dice matrice complessa.
-\end{itemize}
+\mprop{$|\vec{v}| =$ Lunghezza di $\vec{op} = \sqrt{x*2 + y^2}$}
 
-la matrice sopra rappresentata può essere rappresentata anche la seguente notazione:
+\newpage
 
-$A = (a_{ij}) \in M(m * n,K)$
+\subsubsection{Operazioni tra vettori}
 
-\dfn{Matrice nulla}{La matrice nulla $m * n$ è la matrice $O_{(m*n)} = (z_{ij}) \in M(m*n,K)$ definita ponendo $z_{ij} = 0$ per ogni $i = 1,2...,m, j=1,2,...,n$ }
-\ex{Rappresentazione matrice nulla}{
+\dfn{Somma vettoriale}{Dati due vettori $\vec{v} = (x,y)$ e $\vec{w} = (x,y)$ la loro somma è un vettore avente per componenti la somma delle componenti di $\vec{v}$ e $\vec{w}$}
 
-  $ A = \begin{pmatrix}
-      0 \\
-  \end{pmatrix}$
+\mprop{}{$\vec{v} + \vec{w} = (x_v + x_w,y_v + y_w)$}
+
+\qs{}{Siano $\vec{v} = (1,3)$ e $\vec{w} = (4,1)$ due vettori nel piano. determinare $\vec{v} + \vec{w}$}
+
+\sol{}{$\vec{v} + \vec{w} = (1+4,3+1) = (5,4)$}
+
+Se volessimo dare un significato geometrico all'operazione appena svolta, vi sono più modi per rappresentarla:
+
+% Aggiungere rappresentazione grafica 
+
+\cor{}{Il modulo (norma) del vettore somme è minore uguale dei moduli dei 2 vettori sommati
+\\
+Disuguaglianza triangolare: $|\vec{v} + \vec{w}| \le |\vec{v}| + |\vec{w}|$
 }
 
-\dfn{Matrice opposta}{La matrice opposta di $A=(a_{ij}) \in M(m*n, K)$ è la matrice $-A = (b_{ij}) \in M(m * n,K)$ definita ponendo $b_{ij} = -a_{ij} = 1,2,...,n$.}
+\dfn{Moltiplicazione per uno scalare}{Dati il vettore $\vec{v} = (x,y)$ ed il numero reale $\lambda$ il vettore $\lambda\vec{v}$ ha per componenti quelle del vettore $\vec{v}$ moltiplicate per $\lambda$}
 
-\ex{}{
-\\
-$A = \begin{pmatrix}
-  1 \ 0 \ -1 \\
-  3 \ 2 \ 1 \\
-\end{pmatrix}$
-\\
-$-A = \begin{pmatrix}
-  -1 \ 0 \ 1 \\
-  -3 \ -2 \ -1 \\
-\end{pmatrix}$
-}
+\mprop{}{$\lambda\vec{v} = (\lambda x, \lambda y)$}
 
-La somma di $A=(a_{ij}) \in M(m*n, K)$ e $B=(b_{ij}) \in M(m*n, K)$ è la matrice $A+B=(c_{ij}) \in M(m*n, K)$ definita ponendo $c_{ij} = a_{ij} + b_{ij}$, per ogni $i,j$.
+\qs{}{Sia $\vec{v} = (1,2)$, determinare $2\vec{v}$ e $-\vec{v}$}
 
-\ex{}{
-  \\
-  $
-  \begin{pmatrix}
-     1 0 -1 \\
-     3 2 1 \\
-  \end{pmatrix}
-  +
-  \begin{pmatrix}
-     1 2  3 \\
-    -1 -2 -3 \\ 
-  \end{pmatrix}
-  = 
-  \begin{pmatrix}
-    2 2 2 \\
-    2 0 2 \\
-  \end{pmatrix}
-  $
-}
+ \sol{}{$2\vec{v} = (2*1,2*2)=(2,4)$
+ \\ $-\vec{v} = (-1*1,-1*2) = (-1,-2)$}
 
-\clm{\\
-1) Se $A \in M(m*n,K)$, allora $A + O_{m*n} = A$
-\\
-2) Se $A \in M(m*n,K)$, allora $A + (-A) = O_{m*n}$
-}
-In seguito la differenza di due matrici $m*n$ è definita tramite:
-$A-B = A +(-B)$
+ Se volessimo dare un significato geometrico all'operazione appena svolta:
 
-\mprop{}{Se $A,B,C \in M(m*n,K)$, allora
-\\
-$(A+B) + C = A+(B+C)$ \textit{(proprietà associativa della somma)} 
-\\
-$A+B = B +A$ \textit{(proprietà commutativa della somma)}
-}
+% aggiungere rappresentazione geometrica
 
-\nt{(Il simbolo di sommatoria). Se $a_j, j = 1,2,...,n$, denota un elemento di $K$ dipendente dall'indice $j$, allora:
-\\
-$
- \sum_{j=1}^n a_j = a_1 + a_2 + ... a_n
-$
-\\
-Esempio:
-\\
+\cor{}{Nella moltiplicazione per $\lambda$ : il modulo (norma) viene moltiplicato per $|\lambda|$ la direzione resta la stessa, il verso resta uguale se $\lambda > 0$ mentre si inverte se $\lambda < 0$}
 
-}
-
-
-
-
+\subsubsection{Prodotto scalare e angolo tra vettori}
 
 % chapter Vettori e Matrici (end)
 
