@@ -64,6 +64,72 @@ $A = (a_{ij}) \in M(m * n,K)$
   \end{pmatrix}$
 }
 
+\dfn{Matrice opposta}{La matrice opposta di $A=(a_{ij}) \in M(m*n, K)$ è la matrice $-A = (b_{ij}) \in M(m * n,K)$ definita ponendo $b_{ij} = -a_{ij} = 1,2,...,n$.}
+
+\ex{}{
+\\
+$A = \begin{pmatrix}
+  1 \ 0 \ -1 \\
+  3 \ 2 \ 1 \\
+\end{pmatrix}$
+\\
+$-A = \begin{pmatrix}
+  -1 \ 0 \ 1 \\
+  -3 \ -2 \ -1 \\
+\end{pmatrix}$
+}
+
+La somma di $A=(a_{ij}) \in M(m*n, K)$ e $B=(b_{ij}) \in M(m*n, K)$ è la matrice $A+B=(c_{ij}) \in M(m*n, K)$ definita ponendo $c_{ij} = a_{ij} + b_{ij}$, per ogni $i,j$.
+
+\ex{}{
+  \\
+  $
+  \begin{pmatrix}
+     1 0 -1 \\
+     3 2 1 \\
+  \end{pmatrix}
+  +
+  \begin{pmatrix}
+     1 2  3 \\
+    -1 -2 -3 \\ 
+  \end{pmatrix}
+  = 
+  \begin{pmatrix}
+    2 2 2 \\
+    2 0 2 \\
+  \end{pmatrix}
+  $
+}
+
+\clm{\\
+1) Se $A \in M(m*n,K)$, allora $A + O_{m*n} = A$
+\\
+2) Se $A \in M(m*n,K)$, allora $A + (-A) = O_{m*n}$
+}
+In seguito la differenza di due matrici $m*n$ è definita tramite:
+$A-B = A +(-B)$
+
+\mprop{}{Se $A,B,C \in M(m*n,K)$, allora
+\\
+$(A+B) + C = A+(B+C)$ \textit{(proprietà associativa della somma)} 
+\\
+$A+B = B +A$ \textit{(proprietà commutativa della somma)}
+}
+
+\nt{(Il simbolo di sommatoria). Se $a_j, j = 1,2,...,n$, denota un elemento di $K$ dipendente dall'indice $j$, allora:
+\\
+$
+ \sum_{j=1}^n a_j = a_1 + a_2 + ... a_n
+$
+\\
+Esempio:
+\\
+
+}
+
+
+
+
 
 % chapter Vettori e Matrici (end)
 

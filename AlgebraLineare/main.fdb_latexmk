@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1698162687 "main.tex" "main.pdf" "main" 1698162689 0
+["pdflatex"] 1698250166 "main.tex" "main.pdf" "main" 1698250168 2
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1689853683 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1689853683 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
@@ -16,6 +16,9 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1689853683 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1689853683 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1689853683 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1689853683 1316 b636689f1933f24d1294acdf6041daaa ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm" 1689853683 1272 e2d13f0df30bf3ad990bb9d028e37f34 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1689853683 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texmf-dist/fonts/tfm/public/newpx/NewPXMI.tfm" 1689853683 1160 c2197cdaa08622262260a0a34b1dfcef ""
   "/usr/share/texmf-dist/fonts/tfm/public/newpx/NewPXMI_gnu.tfm" 1689853683 748 0258bafb3cb53bfddd528993739cf619 ""
   "/usr/share/texmf-dist/fonts/tfm/public/newpx/pxmiaX.tfm" 1689853683 1732 18a727750846a1c3e7271725c4449898 ""
@@ -38,6 +41,9 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1689853683 32362 179c33bbf43f19adbb3825bb4e36e57a ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1689853683 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1689853683 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1689853683 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb" 1689853683 28902 2f5c04fd2884d1878057baa5aad22765 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1689853683 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb" 1689853683 149037 995a6f1e12c1d647b99b1cf55db78699 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1689853683 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb" 1689853683 25273 57c06ae0831a03c4eb441ef7894a1639 ""
@@ -270,9 +276,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1697356400 6768056 b9b64c033bac87856e423954109e8372 ""
   "letterfonts.tex" 1698158488 8525 ed11538e9090b6e453d1dae9d562bb31 ""
   "macros.tex" 1698158486 3390 dd31ac40797350e5c771ba0ff8ef9b4c ""
-  "main.aux" 1698162688 4170 c4ab9074bd1cb9eaa187f879a54dc456 "pdflatex"
-  "main.tex" 1698162685 3800 1afe75e4b2fdd165dc03fe608a2e578d ""
-  "main.toc" 1698162688 536 0b229f41b086258172951bf5c1592694 "pdflatex"
+  "main.aux" 1698250167 4329 bfc14c697f2ebc83fcd5fabf94a460f4 "pdflatex"
+  "main.tex" 1698250165 5079 354846ed1ff3e103ae5d112cabe57146 ""
+  "main.toc" 1698250167 536 0b229f41b086258172951bf5c1592694 "pdflatex"
   "preamble.tex" 1698158412 20054 e8b060e1824fe8c121b4605787aceebc ""
   (generated)
   "main.aux"
