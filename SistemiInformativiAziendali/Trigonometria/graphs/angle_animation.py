@@ -82,8 +82,8 @@ angleAnimation = animation.FuncAnimation(fig,updatePlot,
                                          repeat=True,blit=True
                                          )
 
-# Save the animation as a video file using FFMpegWriter
-writer = animation.FFMpegWriter(fps=30, metadata=dict(artist='Me'), bitrate=1800)
-angleAnimation.save('/home/caber/Notes/SistemiInformativiAziendali/Trigonometria/graphs/angle_animation.mp4', writer=writer)
+
+# Save the animation as a GIF file
+angleAnimation.save('/home/caber/Notes/SistemiInformativiAziendali/Trigonometria/graphs/angle_animation.gif', writer='imagemagick')
 
 plt.show()
