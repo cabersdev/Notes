@@ -79,11 +79,13 @@ frameAmount = len(radiantArr)
 
 angleAnimation = animation.FuncAnimation(fig,updatePlot,
                                          frames=frameAmount,interval=1000,
-                                         repeat=True,blit=True
+                                         repeat=False,blit=True
                                          )
 
 
-# Save the animation as a GIF file
-angleAnimation.save('/home/caber/Notes/SistemiInformativiAziendali/Trigonometria/graphs/angle_animation.gif', writer='imagemagick')
+# Save the animation as a video file using FFMpegWriter
+writer = animation.FFMpegWriter(fps=30, metadata=dict(artist='Me'), bitrate=1800)
+angleAnimation.save('/home/caber/Notes/SistemiInformativiAziendali/Trigonometria/graphs/angle_animation/angle_animation.mp4', writer=writer)
+
 
 plt.show()
