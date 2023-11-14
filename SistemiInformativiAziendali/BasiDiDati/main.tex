@@ -1,0 +1,83 @@
+
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Basi di dati}\\Sistemi Informativi Aziendali}
+\author{\huge{Caberlotto Giovanni}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Linguaggio SQL} % (fold)
+\label{chap:Linguaggio SQL}
+
+\section{Query Annidate}
+
+\section{Query di aggregazione e funzioni di aggregazione}
+
+\section{Join}
+
+\subsection{Primary key e Foreign Key}
+
+
+\subsection{Definizione di join}
+
+Le join nel linguaggio SQL rappresentano operazioni fondamentali che consentono di unire dati provenienti da due o più tabelle sulla base di condizioni specificate. L'obiettivo principale delle join è stabilire correlazioni tra le righe delle tabelle coinvolte, permettendo così di ottenere risultati più sofisticati e informativi rispetto a quanto sarebbe possibile con una singola tabella. Attraverso le join, è possibile sfruttare le relazioni tra colonne comuni nelle tabelle per ottenere insiemi di dati integrati, ampliando la capacità di analisi e estrazione di informazioni dettagliate da contesti complessi e distribuiti.
+
+\subsection{Inner Join}
+
+La Inner Join: Restituisce solo le righe che hanno corrispondenze in entrambe le tabelle. In altre parole, vengono restituite solo le righe in cui il valore della colonna specificata nella clausola di join è presente in entrambe le tabelle coinvolte.
+\\
+\\
+Graficamente la inner join può essere rappresentata nel seguente modo:
+\\
+\\
+\includegraphics[width=0.25\textwidth]{./graphs/innerjoin.png}
+
+\subsection{Left Join}
+La Left Join o (Left Outer Join): Restituisce tutte le righe dalla tabella a sinistra e le righe corrispondenti dalla tabella a destra. Se non ci sono corrispondenze, vengono restituiti valori NULL dalla tabella a destra.
+\\
+\\
+Graficamente la left join può essere rappresentata nel seguente modo:
+\\
+\\
+\includegraphics[width=0.25\textwidth]{./graphs/leftjoin.png}
+
+\subsection{Right Join}
+La Right Join o (Right Outer Join) È simile alla left join, ma restituisce tutte le righe dalla tabella a destra e le righe corrispondenti dalla tabella a sinistra.
+\\
+\\
+Graficamente la right join può essere rappresentata nel seguente modo:
+\\
+\\
+\includegraphics[width=0.25\textwidth]{./graphs/rightjoin.png}
+
+\subsection{Full Join}
+La Full Join o (Full Outer Join): Restituisce tutte le righe quando c'è una corrispondenza in una delle tabelle. Se non ci sono corrispondenze, vengono restituiti valori NULL da entrambe le tabelle.
+\\
+\\
+Graficamente la full join può essere rappresentata nel seguente modo:
+\\
+\\
+\includegraphics[width=0.25\textwidth]{./graphs/fulljoin.png}
+
+% chapter Linguaggio SQL (end)
+
+\chapter{Il modello Entità Relazione} % (fold)
+\label{chap:Il modello Entità Relazione}
+
+
+
+% chapter Il modello Entità Relazione (end)
+
+\end{document}
