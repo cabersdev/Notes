@@ -1,0 +1,63 @@
+
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Programmazione Web}\\Sistemi Informativi Aziendali}
+\author{\huge{Caberlotto Giovanni}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Come funziona il internet} % (fold)
+\label{chap:Come funziona il internet}
+
+% chapter Come funziona il internet (end)
+
+\chapter{Programmazione lato client} % (fold)
+\label{chap:Programmazione lato client}
+
+\section{HTML}
+
+\subsection{Che cos'è l'HTML}
+\\
+HTML è l'acronimo di HyperText Markup Language ("Linguaggio di contrassegno per gli Ipertesti") e non è un linguaggio di programmazione. Si tratta invece di un linguaggio di markup (di 'contrassegno' o 'di marcatura'), che permette di indicare come disporre gli elementi all'interno di una pagina.
+\\
+\begin{lstlisting}[language=HTML, caption=Esempio di codice in HTML]
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  
+  </body>
+</html>
+\end{lstlisting}
+% chapter Programmazione lato client (end)
+\\
+Queste indicazioni vengono date attraverso degli appositi marcatori, detti tag ('etichette'), che hanno la caratteristica di essere inclusi tra parentesi angolari (ad es, <img> è il segnaposto di un'immagine).
+\\
+\\
+Con HTML quindi indichiamo, attraverso i tag, quali elementi dovranno apparire su uno schermo e come essi debbano essere disposti. Tutte queste indicazioni sono contenute in un documento HTML, spesso detto "Pagina HTML". Una pagina HTML è rappresentata da un file di testo, ovvero un file che possiamo modificare con programmi come notepad e in genere hanno un nome che finisce con l'estensione .html.
+\\
+\\
+Ciò significa che HTML non possiede i costrutti propri della programmazione, come i meccanismi "condizionali", che consentono di reagire in modo diverso a seconda del verificarsi di una condizione ("in questa situazione fai questo, in quest'altra fai quest'altro"), o i costrutti iterativi ("ripeti questa azione, finché non succede questo").
+\\
+\nt{Si parla in questo caso di linguaggio dichiarativo, che serve appunto ad indicare cosa deve apparire sullo schermo (testi, immagini, suoni, etc.), dove e in che sequenza. Nel caso di linguaggi in cui specifichiamo algoritmi precisi con "strutture di controllo", come C, C++, Java, o anche PHP e JavaScript, parliamo di "linguaggi imperativi".}
+\\
+\\
+
+\end{document}

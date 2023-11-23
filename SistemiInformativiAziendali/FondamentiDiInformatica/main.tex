@@ -28,10 +28,120 @@
 
 % chapter Architettura degli elaboratori (end)
 
+\chapter{Tipi di dato operatori e sintassi} % (fold)
+\label{chap:Tipi di dato operatori e sintassi}
+
+% chapter Tipi di dato operatori e sintassi (end)
+
+\chapter{Flussi di controllo} % (fold)
+\label{chap:Flussi di controllo}
+
+% chapter Flussi di controllo (end)
+
+\chapter{Funzioni} % (fold)
+\label{chap:Funzioni}
+
+% chapter Funzioni (end)
+
 \chapter{Programmazione ad oggetti} % (fold)
 \label{chap:Programmazione ad oggetti}
 
+\section{Paradigmi di Programmazione}
+\subsection{Programmazione non strutturata}
+\\
+Con la programmazione non strutturata, il programma si presenta come un unico blocco di codice denominato "main", all'interno del quale le operazioni sui dati avvengono in una sequenza lineare. Un aspetto critico di questa metodologia è l'uso esclusivo di variabili globali, cioè variabili visibili da qualsiasi parte del programma e allocate in memoria per l'intera durata dell'esecuzione del programma.
+\\
+\\
+Questa impostazione presenta diversi limiti e svantaggi. In particolare, l'assenza di una struttura organizzata può portare alla presenza di frammenti di codice ridondanti o ripetuti, contribuendo a rendere il codice difficile da gestire e leggere. Questa mancanza di organizzazione può portare a un notevole spreco di risorse di sistema.
+\\
+\\
+La mancanza di una struttura chiara può generare una serie di problemi, tra cui la difficoltà nel mantenere e modificare il codice nel tempo. Inoltre, la visibilità globale delle variabili può portare a conflitti e confusione, poiché qualsiasi parte del programma può accedere e modificare queste variabili senza restrizioni.
+\\
+\\
+L'approccio sequenziale della programmazione non strutturata può portare a una scarsa modularità e riutilizzo del codice, in quanto le operazioni sono intrinsecamente legate all'interno del blocco "main". Questo rende difficile isolare e riutilizzare specifiche porzioni di codice in contesti diversi.
+\\
+\subsection{Programmazione procedurale}
+\\
+La Programmazione Procedurale rappresenta un significativo avanzamento rispetto alla Programmazione Non Strutturata ed è particolarmente evidente nei contesti di sviluppo come Visual Basic 5.0 o 6.0.
+\\
+\\
+Il concetto fondamentale dietro la Programmazione Procedurale è l'organizzazione del codice attraverso l'aggregazione di frammenti di programma ricorrenti in porzioni di codice chiamate Procedure. Le Procedure fungono da sottoprogrammi, ognuna svolgendo una specifica funzione (ad esempio, il calcolo della radice quadrata di un numero) e sono visibili e richiamabili da qualsiasi parte del codice.
+\\
+\\
+Un elemento chiave di questo paradigma è la possibilità per le Procedure di accettare uno o più parametri, aumentando così la flessibilità e la generalità delle funzioni. Questa caratteristica consente alle Procedure di adattarsi a contesti diversi, in quanto possono essere invocate con dati specifici.
+\\
+\\
+Rispetto alla Programmazione Non Strutturata, la struttura del programma è notevolmente migliorata. Sebbene il "main" (o la funzione principale) continui ad esistere, al suo interno vengono effettuate solo le invocazioni alle Procedure definite nel programma. Questo porta a un flusso di programma più ordinato e comprensibile, dove ogni porzione di codice svolge una funzione ben definita.
+\\
+\\
+Un aspetto significativo è che quando una procedura completa il suo compito, il controllo ritorna al "main" o alla procedura che ha effettuato l'invocazione. Questo modello di flusso del programma, basato sulle invocazioni di procedure, continua fino alla terminazione del programma.
+\\
+\\
+Il grande vantaggio della programmazione procedurale, rispetto alla precedente non strutturata consiste in un notevole abbattimento del numero di errori, che deriva dal fatto che se una procedura è corretta allora vi è la certezza che essa restituirà ad ogni invocazione dei risultati corretti in output.
+\\
+\subsection{Programmazione modulare}
+\\
+La Programmazione modulare rappresenta un ulteriore passo avanti nella evoluzione dei paradigmi di programmazione. Questo sviluppo fu guidato dalla necessità di consentire il riutilizzo delle procedure di un programma da parte di altri, promuovendo la creazione di un sistema più flessibile e modulare.
+\\
+\\
+L'approccio chiave della Programmazione Modulare consiste nel raggruppare procedure con domini comuni, come ad esempio operazioni matematiche, all'interno di moduli separati. L'idea è quella di creare unità di codice indipendenti, che possono essere utilizzate in diversi programmi. Il concetto di librerie di programmi si basa proprio su questi moduli di codice autonomi, che possono essere facilmente integrati in vari contesti applicativi.
+\\
+\\
+Rispetto ai paradigmi precedenti, la struttura di un programma modulare non è più rappresentata da un singolo file contenente sia il "main" che tutte le procedure. Ora, un programma è costituito da diversi moduli, ognuno con una specifica funzione. Ad esempio, ci sarà un modulo dedicato al "main" e altri moduli associati alle diverse operazioni matematiche.
+\\
+\\
+Un aspetto fondamentale è la possibilità per i singoli moduli di contenere dati propri. Questi dati possono essere utilizzati insieme ai dati del "main", migliorando la flessibilità e la coesione del programma. In questo modo, i moduli non solo forniscono funzioni, ma possono anche contribuire con informazioni specifiche al contesto più ampio del programma.
+\\
+\subsection{Programmazione ad oggetti}
+\\
+La programmazione procedurale/modulare è stata a lungo il punto di riferimento nello sviluppo applicativo. Tuttavia, con l'espansione dei contesti di programmazione, si sono manifestati gradualmente i limiti di questa metodologia. In particolare, la difficoltà di realizzare il concetto di "Componente Software" - un prodotto capace di garantire riusabilità, modificabilità e manutenibilità - è emersa come una sfida significativa.
+\\
+\\
+Uno dei principali limiti della programmazione procedurale risiede nella separazione netta tra i dati e le strutture di controllo che operano su di essi. In altre parole, i moduli seguono un approccio orientato alla procedura piuttosto che ai dati stessi. Questo divide la logica del programma in blocchi procedurali, rendendo difficile gestire in modo efficace il concetto di oggetto complesso.
+\\
+\\
+L'avvento della programmazione ad oggetti è intervenuto per superare tali limiti. A differenza degli approcci precedenti, il paradigma OOP si basa sull'idea che esistono oggetti interagenti che scambiano messaggi, mantenendo ciascuno il proprio stato e i propri dati. Questo cambiamento di prospettiva ha consentito di modellare il mondo reale in modo più accurato, creando un'analisi progettuale più aderente alla realtà.
+\\
+\\
+La programmazione ad oggetti non ha eliminato l'uso dei moduli; al contrario, li ha ulteriormente raffinati sfruttando appieno le potenzialità offerte da questo nuovo paradigma. Ogni oggetto in un programma OOP è una sorta di modulo autonomo che incapsula dati e comportamenti correlati, contribuendo alla creazione di componenti software altamente riusabili e manutenibili.
+
+\section{Rappresentazione della realtà}
+\\
+La Programmazione ad Oggetti trae ispirazione dal mondo reale, e questa analogia spesso facilita la comprensione dei suoi concetti. Un esempio pratico utilizzato è quello di un comune masterizzatore, che con le sue caratteristiche e funzionalità offre una chiara rappresentazione dei principi fondamentali della programmazione ad oggetti.
+\\
+\\
+La chiave di questo approccio è concentrarsi sulle caratteristiche e sulle azioni esterne di un oggetto software, piuttosto che sulla sua implementazione interna, simile all'idea che conosciamo il funzionamento generale di un masterizzatore senza necessariamente conoscere i dettagli tecnici dei suoi componenti.
+\\
+\\
+In un programma orientato agli oggetti, gli oggetti rappresentano le unità fondamentali. Questi oggetti, come nel caso del masterizzatore, possono interagire tra di loro attraverso lo scambio di messaggi. Le caratteristiche di un oggetto vengono definite come proprietà, rappresentando i dati che l'oggetto può contenere, mentre le azioni sono chiamate metodi, indicando le operazioni che l'oggetto può eseguire.
+\\
+\\
+Per esempio, nel caso del masterizzatore, le proprietà potrebbero includere la marca, la velocità di scrittura su CD-R, la velocità di lettura, ecc., mentre i metodi potrebbero includere azioni come "Scrivi su CD" o "Leggi CD".
+\\
+\\
+È cruciale distinguere tra proprietà (caratteristiche) e metodi (azioni) in modo da sviluppare un'analisi chiara e concisa delle funzionalità di un oggetto.
+\\
+\\
+Inoltre, l'approccio alla progettazione inizia con la definizione delle classi. Una classe è essenzialmente un modello astratto per creare oggetti. Una volta definite le classi, vengono associate loro le proprietà e i metodi appropriati. Questo è un cambio di mentalità rispetto alla programmazione procedurale, in cui si parte solitamente dal main e si procede nello sviluppo di procedure. Nella programmazione ad oggetti, l'attenzione è posta sulla definizione delle classi e sulla gestione delle interazioni tra gli oggetti.
+\\
+\section{Metodi e proprietà}
+\\
+
 % chapter Programmazione ad oggetti (end)
 
+\chapter{Gestione file} % (fold)
+\label{chap:Gestione file}
+
+% chapter Gestione file (end)
+
+\chapter{Gestioni degli errori} % (fold)
+\label{chap:Gestioni degli errori}
+
+% chapter Gestioni degli errori (end)
+
+\chapter{Sistema operativo} % (fold)
+\label{chap:Sistema operativo}
+
+% chapter Sistema operativo (end)
 
 \end{document}
