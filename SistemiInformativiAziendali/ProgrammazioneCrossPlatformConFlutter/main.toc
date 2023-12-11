@@ -1,0 +1,9 @@
+\contentsline {chapter}{\numberline {1}Introduzione al linguaggio dart}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Perché Dart}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Sintassi base}{4}{section.1.2}%
+\contentsline {subsubsection}{Primo programma}{4}{section*.2}%
+\contentsline {subsubsection}{Identificatori}{5}{section*.3}%
+\contentsline {subsubsection}{Stampa e interpolazione di stringhe}{5}{section*.4}%
+\contentsline {subsubsection}{Punto e virgola}{5}{section*.5}%
+\contentsline {subsubsection}{Spazi e interruzione di riga}{5}{section*.6}%
+\contentsfinish 

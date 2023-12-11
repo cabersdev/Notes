@@ -1,0 +1,5 @@
+\contentsline {chapter}{\numberline {1}Grammar concept and applications}{2}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Business today and tomorrow}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Globalsation}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Towards industry 4.0}{4}{section.2.2}%
+\contentsfinish 
