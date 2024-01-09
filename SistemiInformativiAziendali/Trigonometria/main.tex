@@ -18,59 +18,372 @@
 \tableofcontents
 \pagebreak
 
-\chapter{Goniometria} % (fold)
-\label{chap:Goniometria}
+\chapter{Angoli e Circonferenza Gnoniometrica} % (fold)
+\label{chap:Angoli e Circonferenza Gnoniometrica}
 
-\section{Misura in radianti}
-
-\subsection{Conversione gradi in radianti e viceversa}
-
-\subsection{Circonferenza goniometrica}
-
-\subsection{Angoli particolari}
-
-\section{Funzioni Goniometriche}
-
-\subsection{Seno e Coseno}
+\dfn{Trigonometria}{La Trigonometria ha lo scopo di studiare i procedimenti di calcolo che permettono di determinare, con l'approssimazione che si vuole, la misura degli elementi di un triangolo. "Trigonometria" deriva dal greco "trigonos" e "metron" ossia misura dei triangoli.}
 \\
-\subsubsection{Seno}
+\dfn{Goniometria }{La Goniometria invece è la branca della matematica che si occupa della misura degli angoli e delle relative funzioni}
+\\
+\section{Definizione di Angolo e sistemi di misura} % (fold)
+\label{sec:Definizione di Angolo e sistemi di misura}
+\dfn{Definizione di angolo}{Un angolo è una parte del piano che si ottiene tracciando due semirette aventi la stessa origine, detta vertice dell'angolo. In questo modo il piano viene diviso in due parti, dette angoli e caratterizzate da un'ampiezza}
+\\
+L'unità di misura standard per gli angoli nel sistema internazionale è il radiante (rad), ma spesso si utilizzano anche i gradi. Un giro completo corrisponde a 2π2π radianti o 360 gradi.
+\\
+
+\subsection{Classificazioni degli angoli} % (fold)
+\label{sub:Classificazioni degli angoli}
+
+\subsubsection{Angoli concavi e angoli convessi} % (fold)
+\label{sec:subsubsection name}
+
+Si parla di:
+\begin{itemize}
+  \item{Angolo convesso: quando non contiene i prolungamenti dei suoi lati;}
+  \item{Angolo concavo: quando contiene i prolungamenti dei suoi lati.}
+\end{itemize}
+
+% subsubsection Angoli concavi e angoli convessi (end)
+
+\subsubsection{Angolo piatto, angolo giro e angolo nullo} % (fold)
+\label{sec:Angolo piatto, angolo giro e angolo nullo}
+Questa classificazione riguarda le ampiezze e si riferisce a specifici angoli fondamentali:
+\begin{itemize}
+  \item{Angolo giro: un angolo i cui lati sono semirette coincidenti e che comprende tutti i punti del piano;}
+  \item{angolo piatto: un angolo i cui lati sono semirette opposte, e dunque tale da avere un'ampiezza pari a metà dell'angolo giro;}
+  \item{angolo nullo, un angolo i cui lati sono semirette coincidenti e che non ha al suo interno alcun punto del piano, dunque tale da avere un'ampiezza nulla.}
+\end{itemize}
+
+% subsubsection Angolo piatto, angolo giro e angolo nullo (end)
+
+\subsubsection{Angolo acuto, angolo retto, angolo ottuso} % (fold)
+\label{sec:Angolo acuto, angolo retto, angolo ottuso}
+Riguarda le ampiezze degli angoli:
+\begin{itemize}
+  \item{angolo retto: un angolo la cui ampiezza corrisponde a 1/2 di quella dell'angolo piatto, ossia a 1/4 di quella dell'angolo giro;}
+  \item{angolo acuto: qualsiasi angolo convesso la cui ampiezza è compresa tra l'angolo nullo e l'angolo retto (estremi esclusi);}
+  \item{angolo ottuso: qualsiasi angolo convesso la cui ampiezza è compresa tra l'angolo retto e l'angolo piatto (estremi esclusi).}
+\end{itemize}
+% subsubsection Angolo acuto, angolo retto, angolo ottuso (end)
+
+\subsubsection{Coppie di angoli} % (fold)
+\label{sec:Coppie di angoli}
+Riguarda le coppie di angoli (e non i singoli angoli)
+\begin{itemize}
+  \item{Angoli consecutivi: se hanno un lato e un vertice in comune e se gli altri due lati si trovano da parti opposte rispetto al lato comune.}
+  \item{Angoli adiacenti: se sono consecutivi e i lati non comuni sono semirette opposte.}
+  \item{Angoli opposti al vertice: se i lati dell'uno sono i prolungamenti dei lati dell'altro.}
+  \item{Angoli congruenti: se hanno la stessa ampiezza, ossia se coincidono punto per punto quando vengono sovrapposti.}
+\end{itemize}
+% subsubsection Coppie di angoli (end)
+
+\subsubsection{Angoli complementari, angoli supplementari, angoli esplementari} % (fold)
+\label{sec:Angoli complementari, angoli supplementari, angoli esplementari}
+Un'ultima classificazione degli angoli mette in relazione coppie di angoli con la somma delle loro ampiezze. Nello specifico due angoli di dicono:
+\begin{itemize}
+  \item{angoli complementari, se la loro somma equivale a un angolo retto;}
+  \item{angoli supplementari, se la loro somma è tale da formare un angolo piatto;}
+  \item{angoli esplementari, se la loro somma è un angolo giro.}
+\end{itemize}
+% subsubsection Angoli complementari, angoli supplementari, angoli esplementari (end)
+
+% subsection Classificazioni degli angoli (end)
+
+\subsection{Sistema sessagesimale} % (fold)
+\label{sub:Sistema sessagesimale}
+
+% subsection Sistema sessagesimale (end)
+
+\subsection{Misura in radianti} % (fold)
+\label{sub:Misura in radianti}
+
+% subsection Misura in radianti (end)
+
+% section Definizione di Angolo e sistemi di misura (end)
+
+% chapter Angoli e Circonferenza Gnoniometrica (end)
+
+\chapter{Funzioni Goniometriche} % (fold)
+\label{chap:Funzioni Goniometriche}
+
+\section{Seno e Coseno} % (fold)
+\label{sub:Seno e Coseno}
+
+\subsection{Definizione di seno di un angolo} % (fold)
+\label{sec:Definizione di seno di un angolo}
+
+Dato un angolo $\alpha$ sulla circonferenza goniometrica, si dice seno dell'angolo $\alpha$ l'ordinata del punto $P$ associato ad $\alpha$, ossia
 \\
 \\
-% Animazione funzione seno
+$\sin\alpha = y_p$
 \\
 \\
-\subsubsection{Coseno}
+In modo del tutto analogo: 
+\\
+Sia $P$ il punto associato ad un angolo $\alpha$ sulla circonferenza goniometrica e sia $Q$ la proiezione del punto $P$ sull'asse $y$. Si viene così a formare un triangolo rettangolo $OPQ$, la cui ipotenusa $OP$, essendo un raggio della circonferenza goniometrica, misura 1
 \\
 \\
-% Animazione funzione coseno
+\includegraphics[width=0.4\textwidth]{./graphs/chapt2/definizione-di-seno-di-un-angolo.png}
 \\
 \\
-\subsection{Tangente e Cotangente}
+Si dice seno dell'angolo $\alpha$ il rapporto tra il cateto $OQ$ e l'ipotenusa $OP$ del triangolo. In formule:
+\\
+\\
+$\sin\alpha = \frac{\overline{OQ}}{\overline{OP}} = \frac{\overline{OQ}}{1} = \overline{OQ} = y_p$
+% subsection Definizione di seno di un angolo (end)
 
-\subsection{Secante e Cosecante}
+\subsection{Definizione di coseno di un angolo} % (fold)
+\label{sec:Definizione di coseno di un angolo}
+Dato un angolo $\alpha$ sulla circonferenza goniometrica, si dice coseno dell'angolo $\alpha$ l'ascissa del punto $P$ associato ad $\alpha$.
+\\
+\\
+$\cos\alpha = x_p$
+\\
+\\
+In modo del tutto analogo
+\\
+possiamo definire il coseno di un angolo come il rapporto tra il cateto $OR$ e l'ipotenusa $OP$ del triangolo rettangolo $OPR$, dove $R$ è la proiezione del punto $P$ sull'asse delle ascisse.
+\\
+\\
+\includegraphics[width=0.4\textwidth]{./graphs/chapt2/definizione-di-coseno-di-un-angolo.png}
+\\
+\\
+$\cos\alpha=\frac{\overline{OR}}{\overline{OP}} = \frac{\overline{OR}}{1} = \overline{OR} = x_p$
+% subsection Definizione di coseno di un angolo (end)
 
-\subsection{Archi Associati}
+% section Seno e Coseno (end)
 
-\subsection{Angoli Associati}
+\section{Tangente e Cotangente} % (fold)
+\label{sec:Tangente e Cotangente}
 
-\subsection{Forumule di addizione e sottrazione degli archi}
+\subsection{Definizione di tangente di un angolo} % (fold)
+\label{sub:Definizione di tangente di un angolo}
 
-\subsection{Identità fondamentale della Trigonometria}
+Dato un angolo $\alpha$ sulla circonferenza goniometrica consideriamo la retta $t$ tangente la circonferenza nel punto S(1,0) e sia $T$ il punto di intersezione tra tale retta ed il secondo lato dell'angolo (o il suo prolungamento).
+\\
+\\
+Come possiamo osservare nell'immagine seguente, se il secondo lato dell'angolo $\alpha$ cade nel primo o nel quarto quadrante, ossia se $0\le\alpha<90$° oppure $270$°$<\alpha\le360$°, allora è proprio il secondo lato dell'angolo ad intersecare la retta $t$. Se invece il secondo lato dell'angolo giace nel secondo o nel terzo quadrante, cioè se $90$°$<\alpha<270$°, allora sarà il suo prolungamento ad incontrare la retta $t$.
+\\
+\\
+\includegraphics[width=0.4\textwidth]{./graphs/chapt2/tangente-angolo-sulla-circonferenza-goniometrica.png}
+\\
+\\
+Si definisce tangente dell'angolo $\alpha$ l'ordinata del punto $T$ dato dall'intersezione tra il secondo lato dell'angolo (o il suo prolungamento) e la retta tangente la circonferenza nel punto (1,0). In formule:
+\\
+\\
+$\tan\alpha=y_T$
+\\
+\\
+Come si può notare dalla figura precedente, se il secondo lato dell'angolo α cade sull'asse $y$, ossia se $\alpha=90$° oppure $\alpha=270$°, allora tale lato sarà parallelo alla retta $t$ e quindi non vi sarà alcun punto di intersezione tra tale retta ed il lato dell'angolo. Conseguentemente per $\alpha=90$° e per $\alpha=270$° non è definito alcun valore della tangente.
+\\
+\\
+Partendo dalla circonferenza goniometrica si può definire la tangente di un angolo come il rapporto tra il seno ed il coseno dello stesso angolo. In formule:
+\\
+\\
+$\tan\alpha = \frac{\sin\alpha}{\cos\alpha}$ \ $\forall \alpha \neq \frac{\pi}{2} + k\pi$ con $\alpha \in \mathbb{R}$
+% subsection Definizione di tangente di un angolo (end)
 
-\subsection{Formule di duplicazione}
+\subsection{Definizione di cotangente di un angolo} % (fold)
+\label{sub:Definizione di cotangente di un angolo}
+Ancora una volta, per dare la definizione di cotangente, partiamo da un angolo $\alpha$ sulla circonferenza goniometrica ma, questa volta, consideriamo la retta $c$ tangente la circonferenza nel punto A(0,1). Sia C il punto di intersezione tra tale retta ed il secondo lato dell'angolo (o il suo prolungamento).
+\\
+\\
+Nella seguente immagine possiamo osservare che se il secondo lato dell'angolo $α$ cade nel primo o nel secondo quadrante, ossia se $0<\alpha<180$°, allora è proprio il secondo lato dell'angolo ad intersecare la retta c. Se invece il secondo lato dell'angolo giace nel terzo o nel quarto quadrante, cioè se $180$°$<\alpha<360$°, allora sarà il suo prolungamento ad incontrare la retta $c$.
+\\
+\\
+\includegraphics[width=0.4\textwidth]{./graphs/chapt2/cotangente-angolo-su-circonferenza-goniometrica.png}
+\\
+\\
+Si definisce cotangente dell'angolo $\alpha$ l'ascissa del punto C dato dall'intersezione tra il secondo lato dell'angolo (o il suo prolungamento) e la retta tangente la circonferenza nel punto (0,1), ossia
+\\
+\\
+$\cot\alpha = x_c$
+\\
+\\
+È immediato verificare che, se il secondo lato dell'angolo $\alpha$ cade sull'asse x, ossia se $α=0$°$=360$° oppure $\alpha=180$°, allora non vi sarà alcun punto di intersezione tra la retta c ed il secondo lato dell'angolo. Perciò, per $\alpha=0$° (oppure per $\alpha=360$°) e per $\alpha=180$° non è definito alcun valore della cotangente.
+\\
+\\
+la cotangente di un angolo è data dal rapporto tra il coseno ed il seno dello stesso angolo. In formule:
+\\
+\\
+$\cot\alpha = \frac{\cos\alpha}{\sin\alpha}$ \ $\forall \alpha \neq \pi + k\pi$ con $\alpha \in \mathbb{R}$
+% subsection Definizione di cotangente di un angolo (end)
 
-\subsection{Formule parametriche}
+% section Tangente e Cotangente (end)
 
-\subsection{Formule di prostaferesi}
+\section{Secante e cosecante} % (fold)
+\label{sec:Secante e cosecante}
 
-\subsection{Formule di Werner}
+% section Secante e cosecante (end)
 
-\section{Equazioni e disequazioni goniometriche}
+\section{Formule trigonometriche} % (fold)
+\label{sec:Formule trigonometriche}
 
-% chapter Goniometria (end)
+\subsection{Identità fondamentale della trigonometria} % (fold)
+\label{sub:Identità fondamentale della trigonometria}
+L'identità fondamentale della Trigonometria permette di riscrivere il seno in termini del coseno e viceversa. Si tratta di una formula molto semplice e molto importante, come d'altra parte suggerisce il nome.
+\\
+\\
+$\sin^2\alpha + \cos^2\alpha = 1$
+\\
+\\
+A seconda delle esigenze capita di doverla usare nelle forme
+\\
+\\
+$\sin^2\alpha = 1 - \cos^2\alpha$
+\\
+$\cos^2\alpha = 1 - \sin^2\alpha$
+% subsection Identità fondamentale della trigonometria (end)
+\subsection{Formule per gli angoli associati} % (fold)
+\label{sub:Formule per gli angoli associati}
+Le formule sugli angoli associati permettono di ricavare il valore di seno e coseno di particolari angoli, detti archi associati.
+\\
+\\
+\includegraphics[width=0.4\textwidth]{./graphs/chapt2/archi-associati.png}
+\\
+\\
+\subsubsection{Supplementari $\alpha; \pi-\alpha$} % (fold)
+\label{sec:Supplementari $\alpha; \pi-\alpha$}
+$\sin(\pi-\alpha) = \sin\alpha$ 
+\\
+$\cos(\pi-\alpha) = -\cos\alpha$ 
+\\ 
+$\tan(\pi-\alpha) = -\tan\alpha$ 
+\\
+$\cot(\pi-\alpha) = -\cot\alpha$ 
+% subsubsection Supplementari $\alpha; \pi-\alpha$ (end)
+\subsubsection{Differiscono di $\pi$} % (fold)
+\label{sec:Differiscono di $\pi$}
+$\sin(\pi+\alpha) = -\sin\alpha$ 
+\\
+$\cos(\pi+\alpha) = -\cos\alpha$ 
+\\
+$\tan(\pi+\alpha) = \tan\alpha$ 
+\\
+$\cot(\pi+\alpha) = \cot\alpha$
+% subsubsection Differiscono di $\pi$ (end)
+\newpage
+\subsubsection{Esplementari $\alpha;2\pi-\alpha$} % (fold)
+\label{sec:Esplementari $\alpha;2\pi-\alpha$}
+$\sin(2\pi-\alpha) = -\sin\alpha$ 
+\\
+$\cos(2\pi-\alpha) = \cos\alpha$ 
+\\ 
+$\tan(2\pi-\alpha) = -\tan\alpha$ 
+\\
+$\cot(2\pi-\alpha) = -\cot\alpha$ 
+% subsubsection Esplementari $\alpha;2\pi-\alpha$ (end)
+\subsubsection{Opposti $\alpha;-\alpha$} % (fold)
+\label{sec:Opposti $\alpha;-\alpha$}
+$\sin(-\alpha) = -\sin\alpha$ 
+\\
+$\cos(-\alpha) = \cos\alpha$ 
+\\ 
+$\tan(-\alpha) = -\tan\alpha$ 
+\\
+$\cot(-\alpha) = -\cot\alpha$
+\\
+\ex{Esercizio Guidato $\alpha;-\alpha$}{Semplifichiamo $\sec\alpha - \cos(-\alpha) + \tan\alpha\sin(-\alpha)$
+\\
+Riscriviamo l'espressione in funzione di seno e coseno:
+\\
+\\
+$\frac{1}{\cos\alpha} - \cos(-\alpha) + \frac{\sin\alpha}{\cos\alpha}\sin(-\alpha)$
+\\
+\\
+Trasformiamo le funzioni di $-\alpha$
+\\
+\\
+$\frac{1}{\cos\alpha} - \cos\alpha + \frac{\sin\alpha}{\cos\alpha}*(-\sin\alpha)$
+\\
+\\
+Denominatore comune:
+\\
+\\
+$\frac{1-\cos^2\alpha-\sin^2\alpha}{\cos\alpha}$
+\\
+\\
+Applichiamo l'identità fondamentale della trigonometria cambiando di segno
+\\
+\\
+$\frac{1-1}{\cos\alpha} = 0$
+}
+% subsubsection Opposti $\alpha;-\alpha$ (end)
+\subsubsection{complementari $\apha;\frac{\pi}{2}-\alpha$} % (fold)
+\label{sec:complementari}
+$\sin(\frac{\pi}{2}-\alpha) = \cos\alpha$ 
+\\
+$\cos(\frac{\pi}{2}-\alpha) = \sin\alpha$ 
+\\ 
+$\tan(\frac{\pi}{2}-\alpha) = \cot\alpha$ 
+\\
+$\cot(\frac{\pi}{2}-\alpha) = \tan\alpha$
+\ex{Esercizio Guidato $\alpha;\frac{\pi}{2}-\alpha$}{
+Semplifichiamo $\sin(\frac{\pi}{2}-\alpha)-\cos\alpha+\csc(\frac{\pi}{2}-\alpha)\cos(\frac{\pi}{2}-\alpha)$
+\\
+\\
+Esprimiamo $\csc(\frac{\pi}{2}-\alpha)$ in funzione di $\sin(\frac{\pi}{2}-\alpha)$:
+\\
+\\
+$\sin(\frac{\pi}{2}-\alpha) - \cos\alpha + \frac{1}{\sin(\frac{\pi}{2} - \alpha)}\cos(\frac{\pi}{2} - \alpha)$
+\\
+\\
+Trasformiamo le funzioni di $\frac{\pi}{2} - \alpha$ come indicato in figura
+\\
+\\
+$\cos\alpha-\cos\alpha+\frac{1}{\cos\alpha}\sin\alpha=\tan\alpha$
+}
+% subsubsection complementari (end)
+\subsubsection{Differiscono di $\frac{\pi}{2}$} % (fold)
+\label{sec:Differiscono di $\frac{\pi}{2}$}
+$\sin(\frac{\pi}{2}+\alpha) = \cos\alpha$ 
+\\
+$\cos(\frac{\pi}{2}+\alpha) = -\sin\alpha$ 
+\\ 
+$\tan(\frac{\pi}{2}+\alpha) = -\cot\alpha$ 
+\\
+$\cot(\frac{\pi}{2}+\alpha) = -\tan\alpha$ 
+% subsubsection Differiscono di  (end)
+\subsection{Somma $\frac{3}{2}\pi$} % (fold)
+\label{sub:Somma $\frac{3}{2}\pi$}
+$\sin(\frac{\pi}{2}+\alpha) = -\cos\alpha$ 
+\\
+$\cos(\frac{\pi}{2}+\alpha) = -\sin\alpha$ 
+\\ 
+$\tan(\frac{\pi}{2}+\alpha) = \cot\alpha$ 
+\\
+$\cot(\frac{\pi}{2}+\alpha) = \tan\alpha$ 
+% subsection Somma $\frac{3}{2}\pi$ (end)
+\subsubsection{Differiscono di $\frac{3}{2}\pi$} % (fold)
+\label{sec:Differiscono di $\frac{3}{2}\pi$}
+$\sin(\frac{\pi}{2}+\alpha) = -\cos\alpha$ 
+\\
+$\cos(\frac{\pi}{2}+\alpha) = \sin\alpha$ 
+\\ 
+$\tan(\frac{\pi}{2}+\alpha) = -\cot\alpha$ 
+\\
+$\cot(\frac{\pi}{2}+\alpha) = -\tan\alpha$ 
+% subsubsection Differiscono di $\frac{3}{2}\pi$ (end)
+
+% subsection Formule per gli angoli associati (end)
+
+\subsection{Formule di addizione} % (fold)
+\label{sub:Formule di addizione}
+% subsection Formule di addizione (end)
+
+% section Formule trigonometriche (end)
+
+% chapter Funzioni Goniometriche (end)
+
+\chapter{Equazioni e Disequazioni Goniometriche} % (fold)
+\label{chap:Equazioni e Disequazioni Goniometriche}
+
+% chapter Equazioni e Disequazioni Goniometriche (end)
 
 \chapter{Trigonometria} % (fold)
 \label{chap:Trigonometria}
 
 % chapter Trigonometria (end)
+
 \end{document}
