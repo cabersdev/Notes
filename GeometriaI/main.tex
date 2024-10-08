@@ -1,0 +1,433 @@
+
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Geometria I}\\Università degli studi di Padova}
+\author{\huge{Giovanni Caberlotto}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Campo Complesso $\mathbb{C}$}
+\section{Richiami di teoria degli insiemi}
+\subsection{Numeri Naturali $\mathbb{N}$}
+Consideriamo noti i numeri naturali $\mathbb{N} = \{0, 1, 2, 3, \dots\}$ 
+\\ \\
+\textbf{Operazioni:}
+\begin{itemize}
+    \item{Somma: il numero naturale $m + n$ è l'$n-$essimo successore di $m$, ovvero $m+n=(((m+1)+1)+\dots)+1$ ($n$ addendi uguali ad $1$)}
+    \item{Prodotto: Il numero naturale $mn$ si ottiene iterando n volte la somma di $m$ con se stesso; ovvero $mn = (((m +m)+m)+\dots)+m$ ($n$ addendi uguali ad $m$)}
+\end{itemize}
+$+ : \mathbb{N} \varprod \mathbb{N} \rightarrow \mathbb{N}$
+\\ \\
+Godono delle seguenti proprietà; $\forall x, y, z \in \mathbb{N}$
+\\ \\
+\textbf{Somma:}
+\begin{itemize}
+    \item{Associativa: $(x + y) + z = x + (y + z)$}
+    \item{Commutativa: $x + y = y + x$}
+    \item{Esistenza dell'elementoi neutro: $x + 0 = x = 0 + x$}
+\end{itemize}
+\textbf{Prodotto:}
+\begin{itemize}
+    \item{Associativa: $(xy)z = x(yz)$}
+    \item{Commutativa: $xy = yx$}
+    \item{Esistenza dell'elementoi neutro: $x1 = x = 1x$}
+    \item{Distributiva: $(x + y)z = zx + zy$}
+\end{itemize}
+
+\subsection{Numeri Interi $\mathbb{Z}$}
+Diamo per noti i numeri interi $\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}$ con le operazioni $+$ e $*$ $\forall x, y, z \in \mathbb{Z}$, valgono le seguenti proprietà:
+\\ \\
+\textbf{Somma:}
+\begin{itemize}
+    \item{Associativa: $(x + y) + z = x + (y + z)$}
+    \item{Commutativa: $x + y = y + x$}
+    \item{Esistenza dell'elementoi neutro: $x + 0 = x = 0 + x$}
+    \item{Esistenza dell'elemento opposto $\forall x \in \mathbb{Z} \ \exists \  a \in \mathbb{Z} : x + a = 0$}
+\end{itemize}
+\textbf{Prodotto:}
+\begin{itemize}
+    \item{Associativa: $(xy)z = x(yz)$}
+    \item{Commutativa: $xy = yx$}
+    \item{Esistenza dell'elementoi neutro: $x1 = x = 1x$}
+    \item{Distributiva: $(x + y)z = zx + zy$}
+\end{itemize}
+
+\subsection{Numeri Razionali $\mathbb{Q}$}
+L'insieme dei numeri razionali permette di descrivere i suoi elementi sottoforma di frazioni $\frac{a}{b}$ con $a, b \in \mathbb{Z}$ e $b \neq 0$ e due frazioni $\frac{a}{b}$ e $\frac{a'}{b'}$ rappresentano lo stesso numero razionale se $ab' = a'b \in \mathbb{Q}$
+Il numero intero $n$ si identifica con la frazione $\frac{n}{1}$ e in questo modo $\mathbb{Z} \subset \mathbb{Q}$ le operazioni di somma e prodotto in $\mathbb{Q}$ sono definite da:
+\\ \\
+$\frac{a}{b} + \frac{c}{d} =^{def \frac{ad + bc}{bd}}$, $\frac{a}{b}\frac{c}{d} =^{def} \frac{ac}{bd}$
+\\ \\
+e non dipendono dalla scelta dei rappresentanti, le operazioni di somma e prodotto in $\mathbb{Q}$ godono delle seguenti proprietà $\forall x, y, z \in \mathbb{Q}$
+\\ \\
+\textbf{Somma:}
+\begin{itemize}
+    \item{Associativa: $(x + y) + z = x + (y + z)$}
+    \item{Commutativa: $x + y = y + x$}
+    \item{Esistenza dell'elementoi neutro: $x + 0 = x = 0 + x$}
+    \item{Esistenza dell'elemento opposto $\forall x \in \mathbb{Z} \ \exists \  a \in \mathbb{Z} : x + a = 0$}
+\end{itemize}
+\textbf{Prodotto:}
+\begin{itemize}
+    \item{Associativa: $(xy)z = x(yz)$}
+    \item{Commutativa: $xy = yx$}
+    \item{Esistenza dell'elementoi neutro: $x1 = x = 1x$}
+    \item{Distributiva: $(x + y)z = zx + zy$}
+    \item{Esistenza dell'inverso: dato $x \neq 0 \ \exists \ x^{-1} : xx^{-1} = 1 = x^{-1}x$}
+\end{itemize}
+\dfn{Campo}{Un insieme dotato di due operazioni con le proprietà appena descritte viene definito campo o (corpo commutativo)}
+$+ : K \varprod K \rightarrow K$ \\ \\
+$* : K \varprod K \rightarrow K$ \\ \\
+\subsection{Numeri Reali}
+E' noto che il rapporto tra lunghezze non fornisce sempre un numero razionale
+\\ \\
+ad esempio il rapporto tra la lunghezza della diagonale e quella del lato di un quadrato vale $\sqrt{2}$ O ancora in modo analogo, il rapporto tra la lunghezza di una circonferenza e quella di un suo raggio vale $2\pi$
+\\ \\
+Per questo viene introdotto il campo $\mathbb{R}$ dei numeri reali
+\\ \\
+Nei numeri reali possiamo trovare una radice $n$-essima di un nu8mero reale positivo qualsiasi, ma non possiamo trovare usoluzioni a tutte le equazioni algebriche
+\\ \\
+Ad esempio, non ci può essere soluzione all'equazione $x^2 + 1 = 0$. Se ci fosse un tale numero, -1 sarebbe un quadrato, ma in $\mathbb{R}$ tutti i quadrati sono positivi o $0$
+\\ \\
+Costruendo il campo dei numeri complessi a partire da $\mathbb{R}$ è possibile trovare radici a tutti i polinomi a coefficienti reali
+
+\section{Numeri Complessi $\mathbb{C}$}
+\dfn{Numeri Complessi}{Il campo dei numeri complessi $\mathbb{C}$ è l'insieme $\mathbb{R} \varprod \mathbb{R}$ con le operazioni di somma e prodotto definite nel seguente modo: \\ \\
+$(a,b) + (c,d) = (a+c, b+d)$ e $(a,b)(c,d) = (ac - bd, ad + bc)$ \\ \\
+qualunque siano $(a,b) e (c,d) \in \mathbb{R} \varprod \mathbb{R}$}
+\cor{Osservazioni sul campo $\mathbb{C}$}{$\mathbb{C}$ non è un campo ordinato, cioè non è possibile introdurre una relazione d'ordine totale con le operazioni ammesse: $+, *$, se ciò fosse possibile:
+\\ \\
+$i =^{?} 0$
+$i >^{?} 0$
+$i <^{?} 0$
+\\ \\
+Non essendo confrontabili possiamo quindi affermare che $\mathbb{C}$ non è un campo ordinato
+}
+La somma e il prodotto in $\mathbb{C}$ godono delle seguenti proprietà:
+\textbf{Somma:}
+\begin{itemize}
+    \item{Associativa: $(e,f) + ((a,b) + (c,d)) = (c,d) + ((a,b) + (e,f))$}
+    \item{Commutativa: $(a,b) + (c,d) = (c,d) + (a,b)$}
+    \item{Esistenza dell'elementoi neutro: $0_{\mathbb{C} = (0,0)}$}
+    \item{Esistenza dell'elemento opposto: dato $(a,b) \in \mathbb{C} \ \exists \ -(a,b) : -(a,b) + (-a, -b) = 0$}
+\end{itemize}
+\textbf{Prodotto:}
+\begin{itemize}
+    \item{Associativa: $(a,b)(c,d) = (c,d)(a,b)$}
+    \item{Commutativa: $a,b)(c,d) = (c,d)(a,b)$}
+    \item{Esistenza dell'elementoi neutro: $1_{\mathbb{C} = (1,0)}$}
+    \item{Distributiva: $((a,b) + (c,d))(e,f) = (e,f)(a,b) + (e,f)(c,d)$}
+    \item{Esistenza dell'inverso: se $(a,b) \neq (0,0)$ l'inverso è: $(a,b)^{-1} = (\frac{a}{a^2 + b^2}, \frac{-b}{a^2 + b^2})$}
+\end{itemize}
+Identifichiamo $\mathbb{R}$ con il sottoinsieme (sottocampo) di $\mathbb{C}$ formato dalle coppie $(x, 0)$ 
+\\ \\
+Sia $i = (0,1) \in \mathbb{C}$ e osserviamo che $i^2 = (-1, 0) = -1$, Ogni elemento $(a,b)$ di $\mathbb{C}$ si scrive come:
+\\ \\
+$(a,b) = (a,0) + (0,b) = a + bi \rightarrow$ \textbf{Rappresentazione Algebrica}
+\begin{itemize}
+    \item{Il numero complesso $i$ è detto unità immaginaria}
+    \item{I numeri reali a e b sono detti, rispettivamente parte reale e parte immaginaria del numero complesso $z= a + bi$ in simboli: $a = \Re(z) \quad \text{e} \quad b = \Im(z)$}
+\end{itemize}
+\textbf{Costruzione di un campo estendendolo al campo complesso}
+\qs{}{Dato un campo $K$ composto da due elementi $K = {0, 1}$: \\ \\
+- Costruire le tabelle somma prodotto in $K$ \\
+- Trovare un equazione non risolvibile nel campo $K$ \\
+- Introdurre un $J$ che sia soluzione dell'equazione \\
+- Determinare il campo $\overline{K}$ e le sue tabelle somma prodotto \\
+}
+\sol{$K = \{0, 1\}$ definiamo le tabelle di somma e prodotto per il campo appena definito rispettando le proprietà che definiscono un campo \\ \\ 
+\begin{tabular}{c|c|c}
+     + & 0 & 1 \\
+     \hline
+     0 & 0 & 1 \\
+    \hline
+     1 & 1 & 0 
+\end{tabular}
+\begin{tabular}{c|c|c}
+     * & 0 & 1 \\
+     \hline
+     0 & 0 & 0 \\
+    \hline
+     1 & 0 & 1 
+\end{tabular}
+\\ \\ 
+Introduziamo adesso un equazione non risolvibile nel campo appena definito
+\\ \\
+$x^2 + x = 1$
+Per risolvere questa equazione estendiamo il campo introducendo $j$ $\overline{K} = \{0, 1, j, 1 + j\}$
+\\ \\
+Risolviamo l'equazione per $i + j$ \\ \\
+$(1+j)^2 + 1 + j = 1$ \\ \\
+come si può notare basandoci sulle tabelle precedentemente definite $(1+j)(1+j)$ risulta essere uguale a j in quanto nel campo $K, 1+1 = 0$ \\ \\
+Risolvendola per $j$ otteniamo invece che: $j^2 = 1+j$ questo implica che $(1+j) * j = j + 1 + j$ otteniamo quindi che $(1+j)*j = 1$ abbiamo completato quindi la tabella prodotto del campo $\overline{K}$ \\ \\
+\begin{tabular}{c|c|c|c|c}
+     * & 0 & 1 & j & 1+j \\
+     \hline
+     0 & 0 & 0 & 0 & 0\\
+    \hline
+     1 & 0 & 1 & j & 1+j \\
+     \hline
+     j & 0 & j & 1 + j & 1 \\
+     \hline
+     1+j & 0 & 1+j & 1 & j
+\end{tabular} \\ \\
+Per quanto riguarda la tabella della somma di $\overline{K}$ sappiamo che in un campo deve esistere l'elemento opposto che permetta $a + (-a) = 0$ quindi procedendo analogamente a quanto fatto con la tabella somma nel campo $K$ otteniamo: 
+\\ \\
+\begin{tabular}{c|c|c|c|c}
+     + & 0 & 1 & j & 1+j \\
+     \hline
+     0 & 0 & 1 & j & 1 + j\\
+    \hline
+     1 & 1 & 0 & j & 1+j \\
+     \hline
+     j & j & 1+j & 0 & 1 \\
+     \hline
+     1+j & 1+j & j & 1 & 0
+\end{tabular} 
+}
+
+\subsection{Coniugio di un numero complesso}
+Vi è una corrsipondenza biunivoca $\overline{\phantom{z}} : \mathbb{C} \to \mathbb{C}$, detta coniugio, che associa a ogni numero complesso $z = a + ib$ il suo coniugato $\overline{z} = a + (-b)i = a - ib$
+\\ \\
+Per ogni coppia di numeri complessi $z, w$, valgono:
+\begin{itemize}
+    \item{$\overline{\overline{z}} = z$}
+    \item{$\overline{z + w} = \overline{z} + \overline{w}$}
+    \item{$\overline{zw} = \overline{z} \overline{w}$}
+    \item{$\Re(z) = \frac{z + \overline{z}}{2}$}
+    \item{$\Im(z) = \frac{z - \overline{z}}{2}$}
+\end{itemize}
+\cor{}{Somma o prodotto di due numeri complessi non reali può sempre dare un numero reale}
+\subsection{Rappresentazione trigonometrica dei numeri complessi}
+\dfn{Modulo di un numero complesso}{Il modulo (o valore assoluto) di un numero complesso, $z = a + bi$, è il numero reale (non negativo)
+\\ \\
+$|z| = \sqrt{\overline{z}z} = \sqrt{(a-ib)(a+ib)} = \sqrt{a^2 + b^2}$}
+Il valore assoluto di $\mathbb{C}$ coincide col valore assoluto reale sul sottocampo $\mathbb{R} \forall z \in \mathbb{C}, |\Re(z)| \leq |z|$ e $\Im(z) \leq |z|$ 
+\begin{itemize}
+    \item{$|\overline{\overline{z}}| = |z|$}
+    \item{$|z| \geq 0 \forall z \in \mathbb{C}$ e $|z| = 0$ se e solo se $z = 0$}
+    \item{$|z + w| = |z| + |w|  \forall z, w \in \mathbb{C}$}
+    \item{$|zw| = |z| |w| \forall z, w \in \mathbb{C}$}
+    \item{ se $z \neq 0$ allora $z^{-1} = \frac{\overline{z}}{|z|^2}$ e $|\frac{z}{|z|}| = 1$}
+\end{itemize}
+\textbf{Piano di Argand-Gauss}
+Gli elementi di $\mathbb{C}$ sono i punti del piano cartesiano $\mathbb{R} \varprod \mathbb{R}$ Al numero complesso $z = a + ib$ si associa il punto di coordinate $(a, b)$ 
+\\ \\
+L'asse orizzontale è l'asse reale, l'asse verticale è l'asse immaginario 
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.5]{img/pianoArgandGauss.png}
+  \caption{Piano di Argand-Gauss}
+  \label{fig:image}
+\end{figure}
+Essendo gli assi ortogonali $|a + ib|$ è la distanza dal punto $(a,b)$ dall'origine nel piano cartesiano
+\\ \\
+Dati due numeri complessi $z$ e $w$, il modulo $|z - w|$ è la distanza tra i punti corrispondenti a $z$ e $w$
+\\ \\
+Sia $r$ un numero reale positivo. Nel piano di Gauss l'insieme $\{z \in \mathbb{C} | | z - z_0 | < r\}$ rappresenta i punti interni alla circonferenza di centro $z_0$ e raggio $r$
+\\ \\
+I punti della circonferenza di equazione $x^2 + y^2 = 1$ (centro origine e raggio 1), corrispondono ai numeri complessi $\cos \vartheta + i \sin \vartheta$, con $\vartheta \in [0, 2k\pi]$
+\\ \\
+Sia $z \neq 0 \in \mathbb{C}$ e consideriamo: 
+\\ \\
+$z' = \frac{z}{|z|} = c + di$ si ha $|z'| = \sqrt{c^2 + d^2} = 1$
+\\ \\
+Esiste un numero reale $\vartheta$ (unico se lo richiediamo in $[0, 2k\pi]$) tale che $z' = \cos(\vartheta) + i\sin(\vartheta)$ e si ha $|z|z'$ da cui 
+\\ \\
+$z = |z|(\cos(\vartheta) + i\sin(\vartheta)) \rightarrow$ \textbf{Rappresentazione Trigonometrica}
+\\ \\
+$\vartheta$ è l'angolo formato dalla semiretta per $z$ uscente dall'origine e la semiretta positiva dell'asse orizzontale 
+\\ \\
+$\vartheta$ è detto argomento del numero complesso $z \neq 0$ (ed è determinato da $z$ a meno di multipli di $2k\pi$).
+\\ \\ 
+Si indica con $Arg(z)$
+\section{Richiami di Trigonometria}
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale=0.8]{img/tabellaGradiRadianti.jpg}
+  \caption{Tabella di conversione gradi radianti}
+  \label{fig:image}
+\end{figure}
+
+\section{Operazioni coi numeri complessi}
+\subsection{Prodotto}
+Se $z_1 = |z_1|(\cos(\vartheta) + i\sin(\vartheta))$ e $z_2 = |z_2|(\cos(\vartheta) + i\sin(\vartheta))$ sono numeri complessi non nulli, il loro prodotto è:
+\\ \\
+$z_1 z_2 = |z_1|(\cos(\vartheta) + i\sin(\vartheta)) |z_2|(\cos(\vartheta) + i\sin(\vartheta)) =  |z_1 z_2|(\cos(\vartheta_1 + \vartheta_2) + i\sin(\vartheta_1 + \vartheta_2))$
+\\ \\
+Pertanto:
+\begin{itemize}
+    \item{$|z_1z_2| = |z_1| |z_2|$}
+    \item{Arg($z_1z_2$) = Arg($z_1$) + Arg($z_2$)}
+\end{itemize}
+Per definizione $i = \sqrt{-1}$
+\mprop{Valore di i}{$i = \sqrt{-1} \iff i^2 = -1$}
+\cor{}{Un prodotto tra due numeri complessi può risultare in un numero reale}
+\subsection{Potenze}
+Se $z_1 = |z_1|(\cos(\vartheta_1) + i\sin(\vartheta_1))$ allora:
+\\ \\
+$z_1^2 = |z_1|^2(\cos(\vartheta_1)^2 + i\sin(\vartheta_1)^2)$ \\
+$z_1^3 = |z_1|^3(\cos(\vartheta_1)^3 + i\sin(\vartheta_1)^3)$ \\
+$\dots$ \\
+$z_1^n = |z_1|^n(\cos(\vartheta_1)^n + i\sin(\vartheta_1)^n)$ \\ \\
+Pertanto:
+\begin{itemize}
+    \item{$|z_1^n| = |z_1|^n$}
+    \item{Arg($z_1^n$) = nArg($z_1$)}
+\end{itemize}
+Di conseguenza, sappiamo calcolare le radici:
+\\ \\
+Per $z_0 \neq 0$ e $n \geq 1$ si ha 
+\\ \\
+$z^n = z_0$
+\\ \
+Se, e solo se, $|z|^n = |z_0|$ e $n\vartheta_0 + 2k\pi$ al variare di $k \in \mathbb{Z}$, ove $\vartheta =$ Arg($z$) e $\vartheta_0 =$ Arg($z_0$)
+\mprop{formula di de Moivre}{$z^n = z_0 \Longleftrightarrow
+\begin{cases}
+|z| = \sqrt[n]{|z_0|} \\Complesso
+\vartheta = \frac{\vartheta_0}{n} + \frac{2k\pi}{n} \quad k = 0, \dots, n-1
+\end{cases}$}
+Ci sono $n$ radici $n$-esime distinte per ogni numero complesso diverso da $0$, che fomrano i vertici di un $n$-gono regolare centrato nell'origine 
+\mprop{Esponenziale complesso}{Sia $z = x + iy$, con $x$ e $y$ reali, e poniamo \\ \\
+$e^z = e^{x + iy} = e^x(\cos y + i \sin y)$}
+Al variare di $z \in \mathbb{C}$, $e^z \neq 0$ e si ha $e^{z + w} = e^z e^w$
+\\ \\
+Per ogni numero complesso $z_0 = |z_0|(\cos(\vartheta_0) + i\sin(\vartheta_0) \neq 0$ si ha:
+\\ \\
+$z_0 = |z_0|e^{i\vartheta_0} = pe^{i\vartheta_0} \rightarrow$ \textbf{Rappresentazione Esponenziale} \\ \\
+Ove $\vartheta_0$ è l'argomento di $z_0$ e $p = |z_0|$
+\qs{Risoluzione di un equazione utilizzando la notazione esponenziale}{Dato $z \in \mathbb{C}$ trova le soluzioni di $z^2 * \overline{z} = z$}
+\sol{$z^2 = r^2e^{i2\vartheta}, \overline{z} = re^{-i\vartheta}, z = re^{i\vartheta}$ abbiamo quindi:
+\\ \\
+$r^2e^{i2\vartheta} re^{-i\vartheta} = re^{i\vartheta}$
+\\ \\
+moltiplichiamo r a primo membro e otteniamo 
+\\ \\
+$r^3e^{i2\vartheta} e^{-i\vartheta} = re^{i\vartheta}$
+\\ \\
+svolgiamo i calcoli in e a primo membro raccogliendo i e otteniamo:
+\\ \\
+$r^3e^{i(2\vartheta - \vartheta} = re^{i\vartheta}$
+\\ \\
+$r^3e^{i\vartheta} = re^{i\vartheta}$
+\\ \\ 
+dividiamo per $e^{i\vartheta}$
+\\ \\Complesso
+$r^3 = r$
+\\ \\ 
+otteniamo quindi:
+\\ \\
+$r^3 - r = 0$ \\ \\
+$r(r^2 - 1)$ \\ \\
+otteniamo quindi
+$r=+-1$ e $r=0$
+}
+\mprop{Identità di Eulero}{$e^{i\pi} + 1 = 0$}
+I numeri complessi sono un campo algebricamente chiuso. Vale il cosidetto 
+\thm{Teorema fondamentale dell'algebra}{Sia $P(X$ un polinomio di grado posittivo in $\mathbb{C}[X]$. Allora esiste un numero complesso $z_0$ tale che $P(z_0) = 0$}
+Ogni polinomio a coefficienti in $\mathbb{R}$ si fattorizza come prodotto di polinomi lineari $X - \alpha$ con $\alpha \in \mathbb{R}$ e polinomi di grado due $(X - \beta)(X - \overline{\beta})$ con $\beta \in \mathbb{C}$
+\section{Interpretazione Geometrica}
+Le operazioni in $\mathbb{C}$ hanno una rappresentazione geometrica nel piano di Gauss
+\begin{figure}[h]
+ \centering
+  \includegraphics[scale=0.5]{img/interpretazioneGeometricaSuPianoDiGauss.png}
+  \caption{Interpretazione Geometrica su Piano di Argand-Gauss}
+  \label{fig:image}
+\end{figure}
+La somma per un numero $z_2$ è la traslazione corrispondente a quel vettore. \\ \\
+Il prodotto per un numero $z_2 = pe^{i\alpha} \neq 0$ è una dilatazione di rapporto $p$ seguita da una rotazione di angolo $\alpha =$Arg($z_2$)
+\chapter{Spazi Vettoriali}
+\dfn{Spazi Vettoriali}{Uno spazio vettoriale su $K$ è un insieme non vuoto $V$ dotato di due operazione (Moltiplicazione e Addizione)}
+$+ : K \varprod K \rightarrow V$
+\\ \\
+$* : K \varprod K \rightarrow V$
+\section{Proprietà degli spazi vettoriali}
+\begin{itemize}
+    \item{$(u + v) + w = v + (u + w) \forall u, v \in V$}
+    \item{$u + v = v + u \forall u, v \in V$}
+    \item{$\exists \ \Vec{o} \in V : v + \Vec{o} = \Vec{o} + v \forall u, v \in V$}
+    \item{$\forall v \in V$ esiste un vettore indicato come $-v$ tale che: $v + (-v) = 0$}
+    \item{$(\alpha * \beta) * v = \alpha * (\beta * v) \forall \alpha,\beta \in K \forall u, v \in V$}
+    \item{$\alpha + \beta) * v = \alphav + \betav \forall \alpha,\beta \in K \forall u, v \in V$}
+    \item{$1 * v = v \forall v \in V$}
+\end{itemize}
+\section{Vettori Geometrici}
+Vettori geometrici anche detti segmenti orientati sono rappresentazioni dei vettori su un piano $\mathbb{R}^2$ o $\mathbb{R \varprod C}$ 
+\begin{figure}[h]
+ \centering
+  \includegraphics[scale=0.5]{img/vettoreSulPiano.png}
+  \caption{Vettore sul piano}
+  \label{fig:image}
+\end{figure}
+\textbf{Proprietà}
+\begin{itemize}
+    \item{$\Vec{v} + \Vec{v} = 2\Vec{v}$}
+    \item{$V = K$ Spazio vettoriale su $K$}
+    \item{$K$ campo, $V = L$ un altro campo tale che $V \subset K$ \\ \\
+    Esempi: \\ \\
+    $K = \mathbb{Q} \subset \mathbb{R} = L ; K = \mathbb{R} \subset \mathbb{C} = L$
+    \\ \\
+    $V$ è uno spazio vettoriale su $K$}
+    \item{$V = K^m = \{a_1, a_2, \dots, a_m\} | a_1, a_2, \dots, a_m \in K$ \\ \\
+    $(a_1, a_2, \dots, a_m) + (b_1, b_2, \dots b_m) = (a_1 + b_1, a_2 + b_2, \dots a_m + b_n)$ e si scrive $\begin{pmatrix}
+a_1 \\
+a_2 \\
+a_3 \\
+\vdots
+\end{pmatrix}
++
+\begin{pmatrix}
+b_1 \\
+b_2 \\
+b_3 \\
+\vdots
+\end{pmatrix}
+=
+\begin{pmatrix}
+a_1 + b_1 \\
+a_2 + b_2 \\
+a_3 + b_3 \\
+\vdots
+\end{pmatrix}
+
+\lambda \in \mathbb{K}, \quad
+\begin{pmatrix}
+a_1 \\
+a_2 \\
+\vdots \\
+a_m
+\end{pmatrix}
+\in V = \mathbb{K}^M \quad \text{definisco} \quad \lambda \cdot
+\begin{pmatrix}
+a_1 \\
+a_2 \\
+\vdots \\
+a_m
+\end{pmatrix}
+=
+\begin{pmatrix}
+\lambda a_1 \\
+\lambda a_2 \\
+\vdots \\
+\lambda a_m
+\end{pmatrix}
+$}
+\item{
+$V = $ insieme dei polinomi in $x$ con coefficienti in $K$ e si scrive $K[x]$ il quale è uno spazio vettoriale
+}
+\item{$V =$ insieme di funzioni da $R \rightarrow R$ e anch'esso rappresenta uno spazio vettoriale}
+\end{itemize}
+
+\end{document}
