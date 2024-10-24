@@ -1,0 +1,18 @@
+\contentsline {chapter}{\numberline {1}Campo Complesso $\varmathbb {C}$}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Richiami di teoria degli insiemi}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Numeri Naturali $\varmathbb {N}$}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Numeri Interi $\varmathbb {Z}$}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Numeri Razionali $\varmathbb {Q}$}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Numeri Reali}{4}{subsection.1.1.4}%
+\contentsline {section}{\numberline {1.2}Numeri Complessi $\varmathbb {C}$}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Coniugio di un numero complesso}{6}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Rappresentazione trigonometrica dei numeri complessi}{6}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Richiami di Trigonometria}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Operazioni coi numeri complessi}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Prodotto}{7}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Potenze}{8}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Interpretazione Geometrica}{9}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Spazi Vettoriali}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Proprietà degli spazi vettoriali}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Vettori Geometrici}{10}{section.2.2}%
+\contentsfinish 
