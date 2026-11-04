@@ -1,0 +1,203 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+\title{Analisi Matematica a.a.2026/27
+seconda attività didattica}
+\date{Novembre 2026}
+
+\begin{document}
+
+\maketitle
+
+\paragraph{Definizione di \(f\)}
+
+\[
+f(x,y) = 
+\begin{cases}
+    \dfrac{|x+y||x-y-4|}{\sqrt{x^2 + y^2}}, & \text{se } (x,y) \neq (0,0) \\[6pt]
+    0, & \text{se } (x,y) = (0,0)
+\end{cases}
+\]
+
+Si ha che:
+
+\[
+\operatorname{Dom}f := \{(x,y) \in \mathbb{R}^2 \}
+\]
+
+Verifichiamo la continuità di \(f\) in \((0,0)\). Per fare ciò, calcoliamo il limite di \(f(x,y)\) quando \((x,y) \to (0,0)\).
+
+\[
+\lim_{(x,y) \to (0,0)} f(x,y) = \lim_{(x,y) \to (0,0)} \frac{|x+y||x-y-4|}{\sqrt{x^2 + y^2}}
+\]
+
+Il limite è una forma indeterminata del tipo \(\frac{0}{0}\). Per risolvere questo limite,consideriamo il percorso lungo la retta \(y = mx\):
+
+Sostituendo:
+
+\[
+\lim_{(x,mx) \to (0,0)} \frac{|x+mx||x-mx-4|}{\sqrt{x^2 + m^2x^2}} = \lim_{x \to 0} \frac{|x||1 + m||x(1-m) - 4|}{|x|\sqrt{1+m^2}} =
+\]
+\[
+= \frac{|1+m|}{\sqrt{1+m^2}} \lim_{x \to 0} |x(1-m) - 4| =\frac{|1+m|}{\sqrt{1+m^2}} \cdot 4
+\]
+
+Poichè il limite dipende da \(m\) non esiste. Pertanto, \(f\) non è continua in \((0,0)\).
+
+\paragraph{Studio della differenziabilità in \((2,-2)\)}
+
+Dalla definizione di differenziabilità, \(f\) è differenziabile in \((2,-2)\) se esistono \(\alpha, \beta \in \mathbb{R}\), tali che
+
+\[
+\lim_{(x,y) \to (2,-2)} \frac{f(x,y) - f(2, -2) - \alpha(x-2) - \beta(y+2)}{\sqrt{{(x-2)}^2 + {(y+2)}^2}} = 0
+\]
+
+Se \(f\) è differenziabile in \((2,-2)\), allora esistono le derivate parziali di \(f\) in \((2,-2)\) e si ha che \(\alpha = \frac{\partial f}{\partial x}(2,-2)\) e \(\beta = \frac{\partial f}{\partial y}(2,-2)\).
+
+\[
+\frac{\partial f}{\partial x}(2,-2) = \lim_{h \to 0} \frac{f(2+h,-2) - f(2,-2)}{h} = \lim_{h \to 0} \frac{f(2+h,-2) - 0}{h} = 
+\]
+\[
+= \lim_{h \to 0} \frac{\frac{h^2}{\sqrt{{(2+h)}^2 + {(-2)}^2}}}{h}  = 0
+\]
+
+
+\[
+\frac{\partial f}{\partial y}(2, -2) = \lim_{k \to 0} \frac{f(2,-2+k) - f(2,-2)}{k} = \lim_{k \to 0} \frac{f(2,-2+k) - 0}{k} = 
+\]
+\[
+= \lim_{k \to 0} \frac{\frac{k^2}{\sqrt{{(2)}^2 + {(-2+k)}^2}}}{k}  = 0
+\]
+
+Poiche \(f(2,-2) = 0\), si ha che \(f\) è differenziabile in \((2,-2)\) se e solo se 
+
+\[
+\lim_{(x,y) \to (2,-2)} \frac{f(x,y)}{\sqrt{{(x-2)}^2 + {(y+2)}^2}} = 0
+\]
+
+Da cui segue che \(f\) è differenziabile in \((2,-2)\) se e solo se
+
+\[
+\lim_{(x,y) \to (2,-2)} \frac{\frac{|x+y||x-y-4|}{\sqrt{x^2 + y^2}}}{\sqrt{{(x-2)}^2 + {(y+2)}^2}} = \lim_{(x,y) \to (2,-2)} \frac{|x+y||x-y-4|}{\sqrt{x^2 + y^2} \cdot \sqrt{{(x - 2)}^2 + {(y + 2)}^2}} = 0
+\]
+
+il limite è una forma indeterminata del tipo \(\frac{0}{0}\). 
+
+Utilizziamo le coordinate polari per calcolare il limite. Poniamo \(x = 2 + \rho\cos(\theta)\) e \(y = -2 + \rho\sin(\theta)\).
+
+\[
+\frac{|x+y||x-y-4|}{\sqrt{x^2 + y^2} \cdot \sqrt{{(x - 2)}^2 + {(y + 2)}^2}} = \frac{|(2 + \rho\cos(\theta)) + (-2 + \rho\sin(\theta))|| (2 + \rho\cos(\theta)) - (-2 + \rho\sin(\theta)) - 4|}{\sqrt{(2 + \rho\cos(\theta))^2 + (-2 + \rho\sin(\theta))^2} \cdot \sqrt{{(\rho\cos(\theta))}^2 + {(\rho\sin(\theta))}^2}}
+\] 
+
+\[
+= \frac{\rho^2|(\cos(\theta) + \sin(\theta))(\cos(\theta) - \sin(\theta))|}{\rho\sqrt{{(2+\rho\cos(\theta)}^2 + {(-2+\rho\sin(\theta))}^2}} = \frac{\rho|(\cos(\theta) + \sin(\theta))(\cos(\theta) - \sin(\theta))|}{\sqrt{{(2+\rho\cos(\theta))}^2 + {(-2+\rho\sin(\theta))}^2}}
+\]
+
+\[
+ = \rho \frac{|\cos(2\theta)|}{\sqrt{{(2+\rho\cos(\theta))}^2 + {(-2+\rho\sin(\theta))}^2}}
+\]
+
+Non è possibile esplicitare \(g(\rho)\) e \(h(\theta)\).
+
+Tuttavia, si ha chè 
+
+\[
+0 \leq \frac{\rho|\cos(2\theta)|}{\sqrt{{(2+\rho\cos(\theta))}^2 + {(-2+\rho\sin(\theta))}^2}} \leq \frac{\rho}{\sqrt{8} - \rho} \to 0 \; \qquad (\rho \to 0^+)
+\]
+
+Pertanto, per il teorema del confronto, si ha che
+
+\[
+\lim_{(x,y) \to (2,-2)} \frac{|x+y||x-y-4|}{\sqrt{x^2 + y^2} \cdot \sqrt{{(x - 2)}^2 + {(y + 2)}^2}} = 0
+\]
+
+\(f\) è quindi differenziabile in \((2,-2)\) e le derivate parziali sono entrambe nulle.
+
+\paragraph{Studio della differenziabilità in \((1, 1)\)}
+
+Notiamo che \(x+y = 2 \neq 0\), \(x-y-4 = -4 \neq 0\) e \(x^2 + y^2 = 2 \neq 0\) in \((1,1)\)
+
+Il che implica che in un intorno sufficientemente piccolo di \(1,1\) i segni delle espressioni dentro i valori assoluti non cambiano.
+
+Pertanto, in un intorno di \((1,1)\), \(f\) coincide con la funzione 
+
+\[
+g(x,y) = \frac{(x+y)(-x+y+4)}{\sqrt{x^2 + y^2}} = \frac{-x^2 + y^2 + 4x + 4y}{\sqrt{x^2 + y^2}}
+\]
+
+Calcoliamo le derivate parziali di \(g\):
+
+\[
+\frac{\partial g}{\partial x} = \frac{(-2x+4)\sqrt{x^2 + y^2} - (-x^2 + y^2 + 4x + 4y)\cdot \frac{x}{\sqrt{x^2 + y^2}}}{x^2+y^2}
+\]
+
+\[
+\frac{\partial g}{\partial y} = \frac{(2y+4)\sqrt{x^2 + y^2} - (-x^2 + y^2 + 4x + 4y)\cdot \frac{y}{\sqrt{x^2 + y^2}}}{x^2+y^2}
+\]
+
+Poichè \(\frac{\partial g}{\partial x}\) e \(\frac{\partial g}{\partial y}\) sono continue in \((1,1)\), segue che \(g\) è differenziabile in \((1,1)\) per il teorema del differenziale totale e quindi \(f\) è differenziabile in \((1,1)\) per il teorema del differenziale totale.
+
+\paragraph{Studio della differenziabilità in \((0,0)\)} Poiché \(f\) non è continua in \((0,0)\), segue che \(f\) non è differenziabile in \((0,0)\).
+
+\paragraph{Verifica dell'esistenza e eventuale calcolo di \(\partial_v f(1,1), v = \begin{pmatrix} \frac{1}{2} \\ -\frac{\sqrt{3}}{2}\end{pmatrix}\)}
+
+Verifichiamo che \(v\) sia un vettore unitario:
+
+\[
+\langle v, v \rangle = \left(\frac{1}{2}\right)^2 + \left(-\frac{\sqrt{3}}{2}\right)^2 = \frac{1}{4} + \frac{3}{4} = 1 \implies ||v|| = 1
+\]
+
+Poiché \(f\) è differenziabile in \((1,1)\), segue che \(f\) è derivabile in ogni direzione in \((1,1)\) e quindi esiste la derivata direzionale di \(f\) in \((1,1)\) lungo \(v\).
+
+Inoltre come conseguenza del teorema della derivata composta, si ha che 
+
+\[
+\partial_v f(1,1) = \langle \nabla_f(1,1), v \rangle
+\]
+
+Determiniamo \(\nabla_f(1,1)\):
+
+\[
+\frac{\partial f}{\partial x}(1,1) =  \frac{(-2+4)\sqrt{2} - (-1 + 1 + 4 + 4)\cdot \frac{1}{\sqrt{2}}}{2} = \frac{2\sqrt{2} - 8\cdot \frac{1}{\sqrt{2}}}{2} = \frac{2\sqrt{2} - 4\sqrt{2}}{2} = -\sqrt{2}
+\]
+
+\[
+\frac{\partial f}{\partial y}(1,1) =  \frac{(2+4)\sqrt{2} - (-1 + 1 + 4 + 4)\cdot \frac{1}{\sqrt{2}}}{2} = \frac{6\sqrt{2} - 8\cdot \frac{1}{\sqrt{2}}}{2} = \frac{6\sqrt{2} - 4\sqrt{2}}{2} = \sqrt{2}
+\]
+
+
+Segue che \(\nabla_f(1,1) = \begin{pmatrix} -\sqrt{2} \\ \sqrt{2} \end{pmatrix}\), il che implica che
+
+\[
+\partial_v f(1,1) = \langle \nabla_f(1,1), v \rangle = \left\langle \begin{pmatrix} -\sqrt{2} \\ \sqrt{2} \end{pmatrix}, \begin{pmatrix} \frac{1}{2} \\ -\frac{\sqrt{3}}{2}\end{pmatrix} \right\rangle = -\frac{\sqrt{2}}{2} - \frac{\sqrt{6}}{2} = -\frac{\sqrt{2} + \sqrt{6}}{2}
+\]
+
+\paragraph{Verifica dell'esistenza e eventuale calcolo di \(\partial_v f(0,0), v = \begin{pmatrix} -\frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}}\end{pmatrix}\)}
+
+Verifichiamo che \(v\) sia un vettore unitario:
+\[
+\langle v, v \rangle = \left(-\frac{1}{\sqrt{2}}\right)^2 + \left(\frac{1}{\sqrt{2}}\right)^2 = \frac{1}{2} + \frac{1}{2} = 1 \implies ||v|| = 1
+\]
+
+Poiché \(f\) non è differenziabile in \((0,0)\), non possiamo concludere che \(f\) sia derivabile in ogni direzione in \((0,0)\). Tuttavia, possiamo verificare se la derivata direzionale di \(f\) in \((0,0)\) lungo \(v\) esiste.
+
+\[
+\partial_v f(0,0) = \lim_{h \to 0} \frac{f(0 + h \cdot (-\frac{1}{\sqrt{2}}), 0 + h \cdot \frac{1}{\sqrt{2}}) - f(0,0)}{h} = \lim_{h \to 0} \frac{\frac{|-\frac{1}{\sqrt{2}}h + \frac{1}{\sqrt{2}}h||-\frac{1}{\sqrt{2}}h -\frac{1}{\sqrt{2}}h - 4|}{\sqrt{(-\frac{1}{\sqrt{2}}h)^2 + (\frac{1}{\sqrt{2}}h)^2}} - 0}{h} = 0
+\]
+
+\paragraph{Verificare l'esistenza e eventualmente determinare l'equazione del piano tangente al grafico di \(f\) nel punto \(1,1, f(1,1)\)}
+
+Poiché \(f\) è differenziabile in \((1,1)\), segue che il piano tangente al grafico di \(f\) nel punto \((1,1,f(1,1))\) esiste ed è dato da
+
+\[
+z = f(1,1) + \frac{\partial f}{\partial x}(1,1)(x-1) + \frac{\partial f}{\partial y}(1,1)(y-1) = 4\sqrt{2} - \sqrt{2}(x-1) + \sqrt{2}(y-1) 
+\]
+
+\[
+= 4\sqrt{2} - \sqrt{2}x + \sqrt{2} + \sqrt{2}y - \sqrt{2} = 4\sqrt{2} - \sqrt{2}x + \sqrt{2}y
+\]
+
+\end{document}
