@@ -7,3 +7,4 @@ Rielaborazione del corso di Statistica II tenuto dalla professoressa G. Menardi 
 - Capitolo 1: Stima Puntuale
 - Capitolo 2: Stima per Intervalli
 - Capitolo 3: Verifica d'Ipotesi
+- Capitolo 4: Introduzione alla Verosimiglianza
